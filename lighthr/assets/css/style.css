@@ -268,3 +268,6 @@ align-items: center;
   background-color: transparent;
   border-color: #ffffff;
 }
+.profile-tab-box{
+  padding: 15px !important;
+}

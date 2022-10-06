@@ -235,7 +235,7 @@
                             <div class="profile-usertitle-job ">Manager </div>
                         </div>
                     </li>
-                    <li class="">
+                    <li>
                     <a href="../dashboard/dashboard2.html">
                         <i data-feather="monitor"></i>
                         <span>Dashboard</span></a>
@@ -243,7 +243,7 @@
 
                     <li class="active">
                         <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="clipboard"></i>
+                            <i data-feather="user"></i>
                             <span>Profile</span>
                         </a>
                         <ul class="ml-menu">
@@ -256,17 +256,11 @@
                             
                         </ul>
                     </li>
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
+                    <li >
+                        <a href="../leave/all-leave.html">
                             <i data-feather="clipboard"></i>
                             <span>Leaves</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li class="active">
-                                <a href="../leave/all-leave.html">My Leaves</a>
-                            </li>
-                          
-                        </ul>
                     </li>
                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
@@ -283,19 +277,12 @@
                         </ul>
                     </li>
                     
-                    <li>
-                        <a href="#" onClick="return false;" class="menu-toggle">
-                            <i data-feather="book-open"></i>
+                    <li class="">
+                        <a href="../projects/all-services.html">
+                            <i data-feather="trello"></i>
                             <span>Service Request</span>
                         </a>
-                       
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="">My Service Request</a>
-                            </li>
                         
-                        </ul>
-
                     </li>
                    
                 </ul>
@@ -603,22 +590,698 @@
                 </div>
                 <div class="col-lg-8 col-md-12">
                     <div class="card">
+                        <ul class="nav profile-tab-box p-l-20 mb-0">
+                            <li class="nav-item tab-all">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#Employee">Employee Details</a>
+                            </li>
+                            <li class="nav-item tab-all">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Offer">Offer Details</a>
+                            </li>
+                            <li class="nav-item tab-all">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Contact">Contact Details</a>
+                            </li>
+                            <li class="nav-item tab-all">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Assignment">Assignment Details</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane body active" id="Employee">
+                                <div class="body">
+                                    <form class="row">
+                                      <div class="col-md-6">
+                                        <label for="email_address">Type</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your email address">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Marital Status</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>Married</option>
+                                                        <option>Single</option>
+                                                       
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Employee No</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your Employee ID">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Birth Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Application No</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your email address">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Place of Birth</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Latest Hire Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Country of Birth</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Original Hire Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Nationality</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Gender</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                        <option>Transgender</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Previous Nationality</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       
+                                        <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;">Save</button>
+                                    </form>
+                                </div>
+
+
+
+                            </div>
+                            <div class="tab-pane body" id="Employee">
+                                <div class="body">
+                                    <form class="row">
+                                      <div class="col-md-6">
+                                        <label for="email_address">Type</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your email address">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Marital Status</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>Married</option>
+                                                        <option>Single</option>
+                                                       
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Employee No</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your Employee ID">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Birth Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Application No</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your email address">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Place of Birth</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Latest Hire Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Country of Birth</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Original Hire Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Nationality</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Gender</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                        <option>Transgender</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Previous Nationality</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       
+                                        <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;">Save</button>
+                                    </form>
+                                </div>
+
+
+
+                            </div>
+                            <div class="tab-pane body" id="Contact">
+                                <div class="body">
+                                    <form class="row">
+                                      <div class="col-md-6">
+                                        <label for="email_address">Type</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your email address">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Marital Status</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>Married</option>
+                                                        <option>Single</option>
+                                                       
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Employee No</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your Employee ID">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Birth Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Application No</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your email address">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Place of Birth</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Latest Hire Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Country of Birth</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Original Hire Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Nationality</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Gender</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                        <option>Transgender</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Previous Nationality</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       
+                                        <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;">Save</button>
+                                    </form>
+                                </div>
+
+
+
+                            </div>
+                            <div class="tab-pane body" id="Assignment">
+                                <div class="body">
+                                    <form class="row">
+                                      <div class="col-md-6">
+                                        <label for="email_address">Type</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your email address">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Marital Status</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>Married</option>
+                                                        <option>Single</option>
+                                                       
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Employee No</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your Employee ID">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Birth Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Application No</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter your email address">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Place of Birth</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Latest Hire Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Country of Birth</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Original Hire Date</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Nationality</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Gender</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                        <option>Transgender</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Previous Nationality</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                       
+                                        <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;">Save</button>
+                                    </form>
+                                </div>
+
+
+
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-8 col-md-12">
+                    <div class="card">
                         <div class="profile-tab-box">
                             <div class="p-l-20">
                                 <ul class="nav ">
                                     <li class="nav-item tab-all">
-                                        <a class="nav-link active show" href="#project" data-bs-toggle="tab">About
+                                        <a class="nav-link active show" href="#tab1" data-bs-toggle="tab">About
                                             Me</a>
                                     </li>
                                     <li class="nav-item tab-all p-l-20">
-                                        <a class="nav-link" href="#usersettings" data-bs-toggle="tab">Settings</a>
+                                        <a class="nav-link" href="#tab2" data-bs-toggle="tab">Settings</a>
+                                    </li>
+                                    <li class="nav-item tab-all p-l-20">
+                                        <a class="nav-link" href="#tab3" data-bs-toggle="tab">Settings</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="project" aria-expanded="true">
+                        <div role="tabpanel" class="tab-pane active" id="#tab1" aria-expanded="true">
                             <div class="row clearfix">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="card project_widget">
@@ -748,13 +1411,110 @@
                                 </div>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="timeline" aria-expanded="false">
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="usersettings" aria-expanded="false">
+                        <div role="tabpanel" class="tab-pane" id="#tab2" aria-expanded="true">
                             <div class="card">
                                 <div class="header">
                                     <h2>
-                                        <strong>Security</strong> Settings</h2>
+                                        <strong>Security</strong> Settings 3</h2>
+                                </div>
+                                <div class="body">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Current Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="New Password">
+                                    </div>
+                                    <button class="btn btn-info btn-round">Save Changes</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="header">
+                                    <h2>
+                                        <strong>Account</strong> Settings</h2>
+                                </div>
+                                <div class="body">
+                                    <div class="row clearfix">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="City">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="E-mail">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Country">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea rows="4" class="form-control no-resize"
+                                                    placeholder="Address Line 1"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-check m-l-10">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" id="checkbox"
+                                                            name="checkbox"> Profile Visibility For Everyone
+                                                        <span class="form-check-sign">
+                                                            <span class="check"></span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check m-l-10">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" id="checkbox1"
+                                                            name="checkbox"> New task notifications
+                                                        <span class="form-check-sign">
+                                                            <span class="check"></span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check m-l-10">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" id="checkbox2"
+                                                            name="checkbox"> New friend request notifications
+                                                        <span class="form-check-sign">
+                                                            <span class="check"></span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button class="btn btn-primary btn-round">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="#tab3" aria-expanded="true">
+                            <div class="card">
+                                <div class="header">
+                                    <h2>
+                                        <strong>Security</strong> Settings 3</h2>
                                 </div>
                                 <div class="body">
                                     <div class="form-group">
@@ -850,13 +1610,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
     <script src="../../assets/js/common.min.js"></script>
     <!-- Custom Js -->
     <script src="../../assets/js/admin.js"></script>
+    <script src="../../assets/js/bundles/flatpickr.min.js"></script>
 </body>
 
 
