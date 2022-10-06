@@ -278,55 +278,116 @@ a.ghost{
   text-transform: uppercase;
   transition: transform 80ms ease-in;
 }
+a.ghost{
+	  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-bottom: 1px solid #212529 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border-width: 0px;
+  margin-bottom: 10px;
+}
+.login-logo {
+  max-width: 150px !important;
+  margin-bottom: 20px;
+}
 </style>
 
 <body>
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Create Account</h1>
-			
-			<span>Enter the below details for registration</span>
-			<input type="text" placeholder="Employee ID" />
-			<input type="email" placeholder="DOB" />
-			<input type="text" placeholder="Gender" />
-			<input type="text" placeholder="passport or Emirates ID" />
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Existing users</h1>
-			
-			<span>Please fill in the details to Login</span>
-			<input type="text" placeholder="Employee ID" style="margin-top: 45px;" />
-			<input type="text" placeholder="DOB" />
-			
-			<a href="#">Forgot your password?</a>
-			<a class="ghost" href="../dashboard/dashboard2.html">Sign In</a>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<a class="ghost" href="../dashboard/dashboard2.html">Sign In</a>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>New to the website!</h1>
-				<p>If you are a first time user, Please enter your personal details and start journey with us</p>
-				<a class="ghost" href="sign-up.html">Sign Up</a>
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form action="#">
+				<img src="../../assets/images/logo.png" alt="" class="login-logo" />
+				<h1>Create Account</h1>
+				<!-- <div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div> -->
+				<span>or use your email for registration</span>
+				<input type="text" placeholder="Employee ID" value="CODIC2" class="mt-5" />
+				<input type="text" placeholder="DOB" value="01/01/1990" />
+				<select class="form-control">
+					<option>Male</option>
+					<option>Female</option>
+					<option>TransGender</option>
+				</select>
+				<input type="text" placeholder="Passport ID or Emirates ID" value="PASSPORTXX" />
+				<a href="../dashboard/dashboard2.html" class="ghost mt-4">Sign Up</a>
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form action="#">
+				<img src="../../assets/images/logo.png" alt="" class="login-logo" />
+				<h1>Existing User</h1>
+				<span>Please fill in the details to login</span>
+				<input type="text" placeholder="Employee ID" value="CODIC1" class="mt-5" />
+				<input type="text" placeholder="DOB" value="01/01/1990" />
+				<a href="#">Forgot your password?</a>
+				<a href="../dashboard/dashboard2.html" class="ghost">Sign In</a>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Welcome Back!</h1>
+					<p>To keep connected with us please login with your personal info</p>
+					<button class="ghost" id="signIn">Sign In</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Hello, Friend!</h1>
+					<p>Enter your personal details and start journey with us</p>
+					<button class="ghost" id="signUp">Sign Up</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+	
+	
 
 
 	<!-- Plugins Js -->
 	<script src="../../assets/js/common.min.js"></script>
 	<!-- Extra page Js -->
 	<script src="../../assets/js/pages/examples/login-register.js"></script>
+
+	<script>
+		const signUpButton = document.getElementById("signUp");
+const signInButton = document.getElementById("signIn");
+const container = document.getElementById("container");
+
+signUpButton.addEventListener("click", () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener("click", () => {
+	container.classList.remove("right-panel-active");
+});
+
+	</script>
+
+
 </body>
 
 

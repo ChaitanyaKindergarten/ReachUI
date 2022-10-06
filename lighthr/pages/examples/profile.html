@@ -223,7 +223,7 @@
         <aside id="leftsidebar" class="sidebar">
             <!-- Menu -->
             <div class="menu">
-                 <ul class="list">
+                <ul class="list">
                     <li class="sidebar-user-panel active">
                         <div class="user-panel">
                             <div class=" image">
@@ -235,33 +235,40 @@
                             <div class="profile-usertitle-job ">Manager </div>
                         </div>
                     </li>
-                    <li class="header">-- Main</li>
                     <li class="">
                     <a href="../dashboard/dashboard2.html">
                         <i data-feather="monitor"></i>
                         <span>Dashboard</span></a>
+                    </li>
+
+                    <li class="active">
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i data-feather="clipboard"></i>
+                            <span>Profile</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li class="active">
+                                <a href="../examples/profile.html">My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">Dependants</a>
+                            </li>
+                            
+                        </ul>
                     </li>
                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
                             <i data-feather="clipboard"></i>
                             <span>Leaves</span>
                         </a>
-                         <ul class="ml-menu">
+                        <ul class="ml-menu">
                             <li class="active">
-                                <a href="../leave/all-leave.html">All Leave Request</a>
+                                <a href="../leave/all-leave.html">My Leaves</a>
                             </li>
-                            <li>
-                                <a href="#">New Leave Request</a>
-                            </li>
-                            <li>
-                                <a href="#">Edit Leave Request</a>
-                            </li>
-                            <li>
-                                <a href="#">Leave Types</a>
-                            </li>
+                          
                         </ul>
                     </li>
-                    <li class="">
+                    <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
                             <i data-feather="book-open"></i>
                             <span>Attendance</span>
@@ -277,12 +284,20 @@
                     </li>
                     
                     <li>
-                        <a href="../projects/all-projects.html">
-                            <i data-feather="briefcase"></i>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i data-feather="book-open"></i>
                             <span>Service Request</span>
                         </a>
-                    </li>
+                       
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="">My Service Request</a>
+                            </li>
+                        
+                        </ul>
 
+                    </li>
+                   
                 </ul>
             </div>
             <!-- #Menu -->

@@ -59,7 +59,7 @@
 .card.visitor-dial {
   position: relative !important;
 }
-.mergeableform.card .btn {
+.mergeableform.card .btn.readmorebtn {
   font-size: 11px;
   padding: 0px 7px !important;
   line-height: 24px !important;
@@ -100,13 +100,11 @@
 .usertitle h3 {
   font-weight: 500;
 }
-.profiledashboard {
-}
 .profiledashboard .labelgroup {
   display: flex;
-  /*flex-direction: column;*/
-  margin-bottom: 10px;
-  margin-top: 10px;
+  flex-direction: column;
+  margin-bottom: 6px;
+  margin-top: 5px;
 }
 .columngroup{
 	flex-direction: column;
