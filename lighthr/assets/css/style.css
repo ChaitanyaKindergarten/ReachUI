@@ -31,7 +31,8 @@
   width: 100%;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 .visitor-dial canvas{
 	left: -5px;
@@ -270,4 +271,7 @@ align-items: center;
 }
 .profile-tab-box{
   padding: 15px !important;
+}
+.btn-tbl-edit, .btn-tbl-delete {
+  box-shadow: none !important;
 }

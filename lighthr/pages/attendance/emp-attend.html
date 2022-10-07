@@ -240,7 +240,7 @@
                             <div class="profile-usertitle-job ">Manager </div>
                         </div>
                     </li>
-                    <li class="header">-- Main</li>
+                    <!-- <li class="header">-- Main</li> -->
                     <li class="">
                     <a href="../dashboard/dashboard2.html">
                         <i data-feather="monitor"></i>
@@ -268,18 +268,18 @@
                         </a>
                     </li>
                     <li class="active">
-                        <a href="#" onClick="return false;" class="menu-toggle">
+                        <a href="../attendance/emp-attend.html">
                             <i data-feather="book-open"></i>
                             <span>Attendance</span>
                         </a>
-                        <ul class="ml-menu">
+                        <!-- <ul class="ml-menu">
                             <li>
                                 <a href="../attendance/today-attend.html">Admin Attendance</a>
                             </li>
-                            <li class="active">
+                            <li class="">
                                 <a href="../attendance/emp-attend.html">Employee Attendance</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="">
                         <a href="../projects/all-services.html">
@@ -500,15 +500,23 @@
                     <div class="card">
                         <div class="profile-tab-box">
                             <div class="p-l-20">
-                                <ul class="nav ">
-                                    <li class="nav-item tab-all">
-                                        <a class="nav-link active show" href="#project"
-                                            data-bs-toggle="tab">Attendance</a>
-                                    </li>
-                                    <li class="nav-item tab-all p-l-20">
-                                        <a class="nav-link" href="#usersettings" data-bs-toggle="tab">Report</a>
-                                    </li>
-                                </ul>
+                                <div class="row">
+                                    <label class="mb-2">
+                                        <b>Select User</b>
+                                    </label>
+                                    <div class=" col-md-6">
+                                        <select class="form-control" >
+                                                <option>Maria Smith</option>
+                                                <option>Steven</option>
+                                                <option>Raichel</option>
+                                                <option>Samuel</option>
+                                                <option>Martin</option>
+                                                <option>Genila</option>
+                                                <option>Rita</option>
+                                                <option>Lilly</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -605,12 +613,13 @@
                                                                 <div class="badge col-green">Present</div>
                                                             </td>
                                                             <td class="center">
-                                                                <button class="btn tblActnBtn">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
-                                                                </button>
-                                                                <button class="btn tblActnBtn">
-                                                                    <i class="material-icons">delete</i>
-                                                                </button>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -623,12 +632,13 @@
                                                                 <div class="badge col-green">Present</div>
                                                             </td>
                                                             <td class="center">
-                                                                <button class="btn tblActnBtn">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
-                                                                </button>
-                                                                <button class="btn tblActnBtn">
-                                                                    <i class="material-icons">delete</i>
-                                                                </button>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -641,12 +651,13 @@
                                                                 <div class="badge col-red">Leave</div>
                                                             </td>
                                                             <td class="center">
-                                                                <button class="btn tblActnBtn">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
-                                                                </button>
-                                                                <button class="btn tblActnBtn">
-                                                                    <i class="material-icons">delete</i>
-                                                                </button>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -659,12 +670,13 @@
                                                                 <div class="badge col-green">Present</div>
                                                             </td>
                                                             <td class="center">
-                                                                <button class="btn tblActnBtn">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
-                                                                </button>
-                                                                <button class="btn tblActnBtn">
-                                                                    <i class="material-icons">delete</i>
-                                                                </button>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -677,12 +689,13 @@
                                                                 <div class="badge col-green">Present</div>
                                                             </td>
                                                             <td class="center">
-                                                                <button class="btn tblActnBtn">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
-                                                                </button>
-                                                                <button class="btn tblActnBtn">
-                                                                    <i class="material-icons">delete</i>
-                                                                </button>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -695,12 +708,13 @@
                                                                 <div class="badge col-cyan">Weekend</div>
                                                             </td>
                                                             <td class="center">
-                                                                <button class="btn tblActnBtn">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
-                                                                </button>
-                                                                <button class="btn tblActnBtn">
-                                                                    <i class="material-icons">delete</i>
-                                                                </button>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -713,12 +727,13 @@
                                                                 <div class="badge col-cyan">Weekend</div>
                                                             </td>
                                                             <td class="center">
-                                                                <button class="btn tblActnBtn">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
-                                                                </button>
-                                                                <button class="btn tblActnBtn">
-                                                                    <i class="material-icons">delete</i>
-                                                                </button>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -731,16 +746,17 @@
                                                                 <div class="badge col-green">Present</div>
                                                             </td>
                                                             <td class="center">
-                                                                <button class="btn tblActnBtn">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
-                                                                </button>
-                                                                <button class="btn tblActnBtn">
-                                                                    <i class="material-icons">delete</i>
-                                                                </button>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                     </tbody>
-                                                    <tfoot>
+                                                    <!-- <tfoot>
                                                         <tr>
                                                             <th class="center"> Date </th>
                                                             <th class="center"> Check In </th>
@@ -750,7 +766,7 @@
                                                             <th class="center"> Status </th>
                                                             <th class="center"> Action </th>
                                                         </tr>
-                                                    </tfoot>
+                                                    </tfoot> -->
                                                 </table>
                                             </div>
                                         </div>
@@ -793,6 +809,20 @@
     <script src="../../assets/js/bundles/amcharts4/charts.js"></script>
     <script src="../../assets/js/bundles/amcharts4/animated.js"></script>
     <script src="../../assets/js/pages/attendance/attendance-data.js"></script>
+
+
+
+
+    <!-- <script src="../../assets/js/bundles/jquery.inputmask.bundle.min.js"></script>
+    <script src="../../assets/js/bundles/select2.min.js"></script>
+
+    <script src="../../assets/js/bundles/bootstrap-tagsinput.js"></script>
+    <script src="../../assets/js/bundles/multiselect/js/jquery.multi-select.js"></script>
+    <script src="../../assets/js/bundles/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
+    <script src="../../assets/js/admin.js"></script>
+    <script src="../../assets/js/pages/forms/selectitem-data.js"></script>
+    <script src="../../assets/js/pages/forms/advanced-form-elements.js"></script>
+    <script src="../../assets/js/pages/forms/dropzone-data.js"></script> -->
 </body>
 
 

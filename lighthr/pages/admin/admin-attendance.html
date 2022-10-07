@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.einfosoft.com/templates/admin/atrio/source/lighthr/pages/leave/all-leave.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Oct 2022 06:53:48 GMT -->
+<!-- Mirrored from www.einfosoft.com/templates/admin/atrio/source/lighthr/pages/attendance/emp-attend.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Oct 2022 06:53:46 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -12,33 +12,16 @@
     <!-- Plugins Core Css -->
     <link href="../../assets/css/common.min.css" rel="stylesheet">
     <link href="../../assets/css/bundles/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="../../assets/css/bundles/owl.theme.default.min.css" rel="stylesheet">
-    <link href="../../assets/css/bundles/owl.carousel.min.css" rel="stylesheet">
     <!-- Custom Css -->
     <link href="../../assets/css/style.css" rel="stylesheet" />
     <!-- You can choose a theme from css/styles instead of get all themes -->
     <link href="../../assets/css/styles/all-themes.css" rel="stylesheet" />
 </head>
 <style>
-    .card.visitor-dial {
-  position: relative !important;
-  box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.08);
-}
-td.center {
+    td.center {
   text-align: left;
 }
-.ghost.btn-info {
-    position: absolute;
-right: 230px;
-top: 8px;
-line-height: 25px;
-height: auto;
-background-color: #3a71c7 !important;
-box-shadow: none;
-z-index: 9;
-}
 </style>
-
 <body>
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
@@ -220,7 +203,7 @@ z-index: 9;
                                             <i class="material-icons">help</i>Help
                                         </a>
                                     </li> -->
-                                    <li>
+                                     <li>
                                         <a href="../examples/login-register.html" >
                                             <i class="material-icons">power_settings_new</i>Logout
                                         </a>
@@ -257,13 +240,13 @@ z-index: 9;
                             <div class="profile-usertitle-job ">Manager </div>
                         </div>
                     </li>
-                    <li>
+                    <!-- <li class="header">-- Main</li> -->
+                    <li class="">
                     <a href="../dashboard/dashboard2.html">
                         <i data-feather="monitor"></i>
                         <span>Dashboard</span></a>
                     </li>
-
-                    <li>
+                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
                             <i data-feather="user"></i>
                             <span>Profile</span>
@@ -299,14 +282,53 @@ z-index: 9;
                         </ul> -->
                     </li>
                     
-                    <li class="active">
+                    <li class="">
                         <a href="../projects/all-services.html">
                             <i data-feather="trello"></i>
                             <span>Service Request</span>
                         </a>
-                        
                     </li>
-                   
+
+                    <li class="active">
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i data-feather="users"></i>
+                            <span>Admin</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../admin/admin-workflow.html">Workflow</a>
+                            </li>
+                            <li class="">
+                                <a href="../admin/admin-all-leave.html">Leave</a>
+                            </li>
+                            <li class="">
+                                <a href="../admin/admin-all-services.html">Request</a>
+                            </li>
+                            <li class="active">
+                                <a href="../admin/admin-attendance.html">Attendance</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Public Holidays</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Leave Category</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Leave Types</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Calendar settings</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- <li>
+                        <a href="../projects/all-projects.html">
+                            <i data-feather="briefcase"></i>
+                            <span>Service Request</span>
+                        </a>
+                    </li> -->
+
                 </ul>
             </div>
             <!-- #Menu -->
@@ -498,278 +520,312 @@ z-index: 9;
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <ul class="breadcrumb breadcrumb-style ">
                             <li class="breadcrumb-item">
-                                <h4 class="page-title">Service Request</h4>
+                                <h4 class="page-title">Admin Attendance</h4>
                             </li>
                             <li class="breadcrumb-item bcrumb-1">
                                 <a href="../../index.html">
                                     <i class="fas fa-home"></i> Home</a>
                             </li>
-                            <li class="breadcrumb-item active">Service Request</li>
+                            <li class="breadcrumb-item bcrumb-2">
+                                <a href="#" onClick="return false;">Attendance</a>
+                            </li>
+                            <li class="breadcrumb-item active">Admin Attendance</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="card">
-                        <!-- <div class="header">
-                            <h2>
-                                <strong>All</strong> Leave Request
-                            </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="#" onClick="return false;" class="dropdown-toggle"
-                                        data-bs-toggle="dropdown" role="button" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu float-end">
-                                        <li>
-                                            <a href="#" onClick="return false;">Action</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" onClick="return false;">Another action</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" onClick="return false;">Something else here</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div> -->
-                        <div class="body">
-
-                             <!-- Rounded Corners -->
+            <!-- Your content goes here  -->
             <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-0">
-                    <div class="card mb-0">
-                        <div class="header">
-                            <h2><strong>All Service Requests</strong></h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="#" onClick="return false;" class="dropdown-toggle"
-                                        data-bs-toggle="dropdown" role="button" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu float-end">
-                                        <li>
-                                            <a href="#" onClick="return false;">Action</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" onClick="return false;">Another action</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" onClick="return false;">Something else here</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                <div class="col-lg-12 col-md-12">
+                    <!-- <div class="card">
+                        <div class="profile-tab-box">
+                            <div class="p-l-20">
+                                <ul class="nav ">
+                                    <li class="nav-item tab-all">
+                                        <a class="nav-link active show" href="#project"
+                                            data-bs-toggle="tab">Attendance</a>
+                                    </li>
+                                    <li class="nav-item tab-all p-l-20">
+                                        <a class="nav-link" href="#usersettings" data-bs-toggle="tab">Report</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="body">
+                    </div> -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="project" aria-expanded="true">
                             <div class="row clearfix">
-                                <div class="col-md-3">
-                                <div class="card visitor-dial">
-                                    <h3>Overall request</h3>
-                                    <input type="text" class="dial" data-linecap="round" value="4 Days" data-width="100%"
-                                        data-height="125" data-thickness="0.25" data-fgColor="#F44336" disabled>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="card">
+                                        <div class="chat">
+                                            <div class="chat-header clearfix">
+                                                <img src="../../assets/images/user/user2.jpg" alt="avatar">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-6">
+                                                        <div class="chat-about">
+                                                            <div class="chat-with">Maria Smith</div>
+                                                            <div class="chat-num-messages">Software Developer</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6">
+                                                        <div class="chat-about">
+                                                            <div class="chat-with">Employee ID</div>
+                                                            <div class="chat-num-messages">IM062587UT</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6">
+                                                        <div class="chat-about">
+                                                            <div class="chat-with">Joining Date</div>
+                                                            <div class="chat-num-messages">12 January 2015</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6">
+                                                        <div class="chat-about">
+                                                            <div class="chat-with">Department</div>
+                                                            <div class="chat-num-messages">Account</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card visitor-dial">
-                                    <h3>Pending</h3>
-                                    <input type="text" class="dial" data-linecap="round" value="5 Days" data-width="100%"
-                                        data-height="125" data-thickness="0.25" data-fgColor="#E91E63" disabled>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="card project_widget">
+                                        <div class="header">
+                                        </div>
+                                        <div class="body">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="text-center m-b-20">
+                                                        <h3 class="m-b-10 col-green">08:00</h3>
+                                                        <div class="text font-15 m-b-5">Average Working Hours</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="text-center m-b-20">
+                                                        <h3 class="m-b-10 col-green">10:30 AM</h3>
+                                                        <div class="text font-15 m-b-5">Average In Time</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="text-center m-b-20">
+                                                        <h3 class="m-b-10 col-green">07:30 PM</h3>
+                                                        <div class="text font-15 m-b-5">Average Out Time</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-sm-6">
+                                                    <div class="text-center m-b-20">
+                                                        <h3 class="m-b-10 col-green">01:00</h3>
+                                                        <div class="text font-15 m-b-5">Average Break Time</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-hover js-basic-example contact_list">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="center"> Date </th>
+                                                            <th class="center"> Check In </th>
+                                                            <th class="center"> Check Out </th>
+                                                            <th class="center"> Working Hours </th>
+                                                            <th class="center"> Shift </th>
+                                                            <th class="center"> Status </th>
+                                                            <th class="center"> Action </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="odd gradeX">
+                                                            <td class="center">10-02-2018</td>
+                                                            <td class="center col-green">10:28</td>
+                                                            <td class="center col-green">19:32</td>
+                                                            <td class="center col-green">08:04</td>
+                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">
+                                                                <div class="badge col-green">Present</div>
+                                                            </td>
+                                                            <td class="center">
+                                                                
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
+                                                                    <i class="material-icons">mode_edit</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="odd gradeX">
+                                                            <td class="center">11-02-2018</td>
+                                                            <td class="center col-red">10:32</td>
+                                                            <td class="center col-green">19:32</td>
+                                                            <td class="center col-green">08:00</td>
+                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">
+                                                                <div class="badge col-green">Present</div>
+                                                            </td>
+                                                            <td class="center">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
+                                                                    <i class="material-icons">mode_edit</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="odd gradeX">
+                                                            <td class="center">12-02-2018</td>
+                                                            <td class="center">-</td>
+                                                            <td class="center">-</td>
+                                                            <td class="center">-</td>
+                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">
+                                                                <div class="badge col-red">Leave</div>
+                                                            </td>
+                                                            <td class="center">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
+                                                                    <i class="material-icons">mode_edit</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="odd gradeX">
+                                                            <td class="center">13-02-2018</td>
+                                                            <td class="center col-red">10:35</td>
+                                                            <td class="center col-green">19:31</td>
+                                                            <td class="center col-red">07:56</td>
+                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">
+                                                                <div class="badge col-green">Present</div>
+                                                            </td>
+                                                            <td class="center">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
+                                                                    <i class="material-icons">mode_edit</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="odd gradeX">
+                                                            <td class="center">14-02-2018</td>
+                                                            <td class="center col-green">10:25</td>
+                                                            <td class="center col-red">19:29</td>
+                                                            <td class="center col-green">08:04</td>
+                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">
+                                                                <div class="badge col-green">Present</div>
+                                                            </td>
+                                                            <td class="center">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
+                                                                    <i class="material-icons">mode_edit</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="odd gradeX">
+                                                            <td class="center">15-02-2018</td>
+                                                            <td class="center">-</td>
+                                                            <td class="center">-</td>
+                                                            <td class="center">-</td>
+                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">
+                                                                <div class="badge col-cyan">Weekend</div>
+                                                            </td>
+                                                            <td class="center">
+                                                               
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
+                                                                    <i class="material-icons">mode_edit</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="odd gradeX">
+                                                            <td class="center">16-02-2018</td>
+                                                            <td class="center">-</td>
+                                                            <td class="center">-</td>
+                                                            <td class="center">-</td>
+                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">
+                                                                <div class="badge col-cyan">Weekend</div>
+                                                            </td>
+                                                            <td class="center">
+                                                              
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
+                                                                    <i class="material-icons">mode_edit</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="odd gradeX">
+                                                            <td class="center">17-02-2018</td>
+                                                            <td class="center col-green">10:28</td>
+                                                            <td class="center col-green">19:35</td>
+                                                            <td class="center col-green">08:07</td>
+                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">
+                                                                <div class="badge col-green">Present</div>
+                                                            </td>
+                                                            <td class="center">
+                                                              
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
+                                                                    <i class="material-icons">mode_edit</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <!-- <tfoot>
+                                                        <tr>
+                                                            <th class="center"> Date </th>
+                                                            <th class="center"> Check In </th>
+                                                            <th class="center"> Check Out </th>
+                                                            <th class="center"> Working Hours </th>
+                                                            <th class="center"> Shift </th>
+                                                            <th class="center"> Status </th>
+                                                            <th class="center"> Action </th>
+                                                        </tr>
+                                                    </tfoot> -->
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card visitor-dial">
-                                    <h3>Rejected</h3>
-                                    <input type="text" class="dial" data-linecap="round" value="4 Days" data-width="100%"
-                                        data-height="125" data-thickness="0.25" data-fgColor="#00BCD4" disabled>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card visitor-dial">
-                                    <h3>Completed</h3>
-                                    <input type="text" class="dial" data-linecap="round" value="6 Days" data-width="100%"
-                                        data-height="125" data-thickness="0.25" data-fgColor="#009688" disabled>
-                                </div>
-                            </div>
-                                
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# Rounded Corners -->
-
-            <div class="col-12 mb-0 pos-rel">
-                <div class="card mb-0">
-                    <a href="add-request.html" class="ghost btn btn-info">New Request</a>
-                <div class="table-responsive body">
-                    <table class="table table-hover js-basic-example contact_list">
-                        <thead>
-                            <tr>
-                                <th class="center">Request ID</th>
-                                <!-- <th class="center"> Emp ID </th> -->
-                                <th class="center"> Request Type </th>
-                                <th class="center"> Request date</th>
-                                <th class="center"> Status </th>
-                                <th class="center"> Applied to </th>
-                                <th class="center"> Approved date </th>
-                                <th class="center"> Remarks  </th>
-                                <th class="center"> Action </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="">
-                                <td class="center">10045</td>
-                                <!-- <td class="center">1001</td> -->
-                                <td class="center">Salary certificate</td>
-                                <td class="center">17-07-2018</td>
-                                <td class="center">
-                                    <div class="label light-green shadow-style">Approved</div>
-                                </td>
-                               
-                                <td class="table-img center">
-                                    <img src="../../assets/images/user/user8.jpg" alt="">
-                                </td>
-                                <td class="center">21-07-2018</td>
-                                <td class="center">xyz...</td>
-                                <td class="center">
-                                    <a href="edit-leave.html" class="btn btn-tbl-edit disabled">
-                                        <i class="material-icons">create</i>
-                                    </a>
-                                    <a href="#" class="btn btn-tbl-delete disabled">
-                                        <i class="material-icons">close</i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class="center">10046</td>
-                                <!-- <td class="center">1001</td> -->
-                                <td class="center">Employment certificate</td>
-                                <td class="center">17-07-2018</td>
-                                <td class="center">
-                                    <div class="label l-bg-cyan shadow-style">Pending</div>
-                                </td>
-                               
-                                <td class="table-img center">
-                                    <img src="../../assets/images/user/user8.jpg" alt="">
-                                </td>
-                                <td class="center">21-07-2018</td>
-                                <td class="center">xyz...</td>
-                                <td class="center">
-                                    <a href="edit-leave.html" class="btn btn-tbl-edit ">
-                                        <i class="material-icons">create</i>
-                                    </a>
-                                    <a href="#" class="btn btn-tbl-delete">
-                                        <i class="material-icons">close</i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class="center">10047</td>
-                                <!-- <td class="center">1001</td> -->
-                                <td class="center">Experience certificate</td>
-                                <td class="center">17-07-2018</td>
-                                <td class="center">
-                                    <div class="label l-bg-orange shadow-style">Reject</div>
-                                </td>
-                               
-                                <td class="table-img center">
-                                    <img src="../../assets/images/user/user8.jpg" alt="">
-                                </td>
-                                <td class="center">21-07-2018</td>
-                                <td class="center">xyz...</td>
-                                <td class="center">
-                                    <a href="edit-leave.html" class="btn btn-tbl-edit ">
-                                        <i class="material-icons">create</i>
-                                    </a>
-                                    <a href="#" class="btn btn-tbl-delete">
-                                        <i class="material-icons">close</i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class="center">10048</td>
-                                <!-- <td class="center">1001</td> -->
-                                <td class="center">Salary certificate</td>
-                                <td class="center">17-07-2018</td>
-                                <td class="center">
-                                    <div class="label light-green shadow-style">Approved</div>
-                                </td>
-                               
-                                <td class="table-img center">
-                                    <img src="../../assets/images/user/user8.jpg" alt="">
-                                </td>
-                                <td class="center">21-07-2018</td>
-                                <td class="center">xyz...</td>
-                                <td class="center">
-                                    <a href="edit-leave.html" class="btn btn-tbl-edit disabled">
-                                        <i class="material-icons">create</i>
-                                    </a>
-                                    <a href="#" class="btn btn-tbl-delete disabled">
-                                        <i class="material-icons">close</i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class="center">10049</td>
-                                <!-- <td class="center">1001</td> -->
-                                <td class="center">Experience certificate</td>
-                                <td class="center">17-07-2018</td>
-                                <td class="center">
-                                    <div class="label l-bg-cyan shadow-style">Pending</div>
-                                </td>
-                               
-                                <td class="table-img center">
-                                    <img src="../../assets/images/user/user8.jpg" alt="">
-                                </td>
-                                <td class="center">21-07-2018</td>
-                                <td class="center">xyz...</td>
-                                <td class="center">
-                                    <a href="edit-leave.html" class="btn btn-tbl-edit ">
-                                        <i class="material-icons">create</i>
-                                    </a>
-                                    <a href="#" class="btn btn-tbl-delete">
-                                        <i class="material-icons">close</i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td class="center">10050</td>
-                                <!-- <td class="center">1001</td> -->
-                                <td class="center">Noc - dubai airport</td>
-                                <td class="center">17-07-2018</td>
-                                <td class="center">
-                                    <div class="label l-bg-orange shadow-style">Reject</div>
-                                </td>
-                               
-                                <td class="table-img center">
-                                    <img src="../../assets/images/user/user8.jpg" alt="">
-                                </td>
-                                <td class="center">21-07-2018</td>
-                                <td class="center">xyz...</td>
-                                <td class="center">
-                                    <a href="edit-leave.html" class="btn btn-tbl-edit ">
-                                        <i class="material-icons">create</i>
-                                    </a>
-                                    <a href="#" class="btn btn-tbl-delete">
-                                        <i class="material-icons">close</i>
-                                    </a>
-                                </td>
-                            </tr>
-
-                           
-                        </tbody>
-                      
-                    </table>
-                </div>
-                </div>
-            </div>
-
+                        <div role="tabpanel" class="tab-pane" id="timeline" aria-expanded="false">
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="usersettings" aria-expanded="false">
+                            <div class="card">
+                                <div class="header">
+                                    <h2>
+                                        <strong>Attendance</strong> Report</h2>
+                                </div>
+                                <div class="body">
+                                    <div class="row clearfix">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="card">
+                                                <div class="body">
+                                                    <div id="pieChart"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -781,13 +837,12 @@ z-index: 9;
     <!-- Custom Js -->
     <script src="../../assets/js/admin.js"></script>
     <script src="../../assets/js/pages/tables/jquery-datatable.js"></script>
-
-    <script src="../../assets/js/bundles/jquery.knob.min.js"></script>
-    <!-- Custom Js -->
-    <!-- Knob Js -->
-    <script src="../../assets/js/pages/charts/jquery-knob.js"></script>
+    <script src="../../assets/js/bundles/amcharts4/core.js"></script>
+    <script src="../../assets/js/bundles/amcharts4/charts.js"></script>
+    <script src="../../assets/js/bundles/amcharts4/animated.js"></script>
+    <script src="../../assets/js/pages/attendance/attendance-data.js"></script>
 </body>
 
 
-<!-- Mirrored from www.einfosoft.com/templates/admin/atrio/source/lighthr/pages/leave/all-leave.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Oct 2022 06:53:48 GMT -->
+<!-- Mirrored from www.einfosoft.com/templates/admin/atrio/source/lighthr/pages/attendance/emp-attend.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Oct 2022 06:53:48 GMT -->
 </html>
