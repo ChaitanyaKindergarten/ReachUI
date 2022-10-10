@@ -511,17 +511,21 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-3">
+                                        <div class="col-6 mb-4">
                                             <h5>EMP564</h5>
                                             <small>Employee ID</small>
                                         </div>
-                                        <div class="col-3">
+                                        <div class="col-6 mb-4">
                                             <h5>Female</h5>
                                             <small>Gender</small>
                                         </div>
                                         <div class="col-6">
                                             <h5>Software Engineer</h5>
                                             <small>Designation</small>
+                                        </div>
+                                        <div class="col-6">
+                                            <h5>Emily@gmail.com</h5>
+                                            <small>Email ID</small>
                                         </div>
                                     </div>
                                 </div>
@@ -839,11 +843,55 @@
                                 <div class="body">
                                     <form class="row">
                                       <div class="col-md-6">
-                                        <label for="email_address">Type</label>
+                                        <label for="email_address">Email ID:</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your email address">
+                                                    placeholder="Enter your Email Id">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Date of Birth:</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input id="myDatePicker" class="flatPicker"
+                                                placeholder="Please choose a date...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                     
+                                      <div class="col-md-6">
+                                        <label for="email_address">Country of Birth</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Nationality</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                       </div>
@@ -862,17 +910,49 @@
                                             </div>
                                         </div>
                                       </div>
-                                      <div class="col-md-6">
-                                        <label for="email_address">Employee No</label>
+                                      <!-- <div class="col-md-6">
+                                        <label for="email_address">Marital Status</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your Employee ID">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>Married</option>
+                                                        <option>Single</option>
+                                                       
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div> -->
+                                      <div class="col-md-6">
+                                        <label for="email_address">Education Qualification</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <div class="form-group default-select select2Style">
+                                                    <select class="form-control select2" data-placeholder="Select">
+                                                        <option></option>
+                                                        <option>India</option>
+                                                        <option>Australia</option>
+                                                        <option>USA</option>
+                                                        <option>Poland</option>
+                                                        <option>Afghanistan</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                       </div>
                                       <div class="col-md-6">
-                                        <label for="email_address">Birth Date</label>
+                                        <label for="email_address">Year of Experience</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address1" class="form-control"
+                                                    placeholder="Enter Your Experience" valie="4">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="email_address">Date of Joining</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input id="myDatePicker" class="flatPicker"
@@ -880,12 +960,15 @@
                                             </div>
                                         </div>
                                       </div>
-                                      <div class="col-md-6">
+
+
+                                     
+                                      <!-- <div class="col-md-6">
                                         <label for="email_address">Application No</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your email address">
+                                                    placeholder="Enter Application No">
                                             </div>
                                         </div>
                                       </div>
@@ -915,23 +998,7 @@
                                             </div>
                                         </div>
                                       </div>
-                                      <div class="col-md-6">
-                                        <label for="email_address">Country of Birth</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <div class="form-group default-select select2Style">
-                                                    <select class="form-control select2" data-placeholder="Select">
-                                                        <option></option>
-                                                        <option>India</option>
-                                                        <option>Australia</option>
-                                                        <option>USA</option>
-                                                        <option>Poland</option>
-                                                        <option>Afghanistan</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                      </div>
+                                     
                                       <div class="col-md-6">
                                         <label for="email_address">Original Hire Date</label>
                                         <div class="form-group">
@@ -941,23 +1008,7 @@
                                             </div>
                                         </div>
                                       </div>
-                                      <div class="col-md-6">
-                                        <label for="email_address">Nationality</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <div class="form-group default-select select2Style">
-                                                    <select class="form-control select2" data-placeholder="Select">
-                                                        <option></option>
-                                                        <option>India</option>
-                                                        <option>Australia</option>
-                                                        <option>USA</option>
-                                                        <option>Poland</option>
-                                                        <option>Afghanistan</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                      </div>
+                                      
                                       <div class="col-md-6">
                                         <label for="email_address">Gender</label>
                                         <div class="form-group">
@@ -989,7 +1040,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                      </div>
+                                      </div> -->
                                        
                                         <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;">Save</button>
                                     </form>
@@ -1002,35 +1053,21 @@
                                 <div class="body">
                                     <form class="row">
                                       <div class="col-md-6">
-                                        <label for="email_address">Type</label>
+                                        <label for="email_address">Employee Type</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your email address">
+                                                    placeholder="Enter Employee type">
                                             </div>
                                         </div>
                                       </div>
-                                      <div class="col-md-6">
-                                        <label for="email_address">Marital Status</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <div class="form-group default-select select2Style">
-                                                    <select class="form-control select2" data-placeholder="Select">
-                                                        <option></option>
-                                                        <option>Married</option>
-                                                        <option>Single</option>
-                                                       
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                      </div>
+                                     
                                       <div class="col-md-6">
                                         <label for="email_address">Employee No</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your Employee ID">
+                                                    placeholder="Enter your Employee No">
                                             </div>
                                         </div>
                                       </div>
@@ -1048,7 +1085,7 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your email address">
+                                                    placeholder="Enter your Application No">
                                             </div>
                                         </div>
                                       </div>
@@ -1165,11 +1202,11 @@
                                 <div class="body">
                                     <form class="row">
                                       <div class="col-md-6">
-                                        <label for="email_address">Type</label>
+                                        <label for="email_address">Employee Type</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your email address">
+                                                    placeholder="Enter your Employee Type">
                                             </div>
                                         </div>
                                       </div>
@@ -1193,7 +1230,7 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your Employee ID">
+                                                    placeholder="Enter your Employee No">
                                             </div>
                                         </div>
                                       </div>
@@ -1211,7 +1248,7 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your email address">
+                                                    placeholder="Enter your Application No">
                                             </div>
                                         </div>
                                       </div>
@@ -1328,11 +1365,11 @@
                                 <div class="body">
                                     <form class="row">
                                       <div class="col-md-6">
-                                        <label for="email_address">Type</label>
+                                        <label for="email_address">Employee Type</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your email address">
+                                                    placeholder="Enter your Employee Type">
                                             </div>
                                         </div>
                                       </div>
@@ -1356,7 +1393,7 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your Employee ID">
+                                                    placeholder="Enter your Employee No">
                                             </div>
                                         </div>
                                       </div>
@@ -1374,7 +1411,7 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address1" class="form-control"
-                                                    placeholder="Enter your email address">
+                                                    placeholder="Enter your Application No">
                                             </div>
                                         </div>
                                       </div>
