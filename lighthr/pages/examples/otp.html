@@ -13,7 +13,7 @@
 	<link href="../../assets/css/pages/extra_pages.css" rel="stylesheet" />
 </head>
 
-<style type="text/css">
+<<style type="text/css">
 	@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 
 * {
@@ -310,89 +310,40 @@ a.ghost{
 }
 .login-logo {
   max-width: 150px !important;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
-#btnradio1, #btnradio2 {
-  opacity: 1 !important;
-  left: 0px;
-  width: 17px;
-  height: 17px;
-  top: -3px !important;
-}
-.form-radio {
-  float: left;
-  position: relative;
-  margin-right: 13px;
-}
-.radiotitle{
-text-align: left;
-margin-bottom: 3px;
-margin-top: 10px;
-font-size: 12px;
-}
-[type="radio"]:checked + label {
-  padding-left: 20px;
-  height: 25px;
-  line-height: 25px;
-  font-size: 16px;
-  font-weight: normal;
-}
-</style>
+</style>>
 
 <body>
 	<div class="container" id="container">
 		<div class="form-container sign-up-container">
 			<form action="#">
 				<img src="../../assets/images/logo.png" alt="" class="login-logo" />
-				<h1>Create Account</h1>
+				<h1>Verification</h1>
 				<!-- <div class="social-container">
 					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
 					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 				</div> -->
-				<!-- <span>or use your email for registration</span> -->
-				<input type="text" placeholder="Employee ID" value="Employee ID" class="mt-2" />
-				<input type="text" placeholder="DOB" value="DOB" />
-				<select class="form-control">
-					<option>Gender</option>
-					<option>Male</option>
-					<option>Female</option>
-					<option>TransGender</option>
-				</select>
-				<input type="text" placeholder="Passport ID/Emirates ID" value="Passport ID/Emirates ID" />
-				<input type="text" placeholder="Mobile Number" value="Mobile Number" />
-				<input type="text" placeholder="Email ID" value="Email ID" />
-				<div>
-					<label class="radiotitle">Please choose any one of the below options for future logins</label>
-					<div class="form-radio" role="group"
-                                aria-label="Basic radio">
-                                <input type="radio" class="" name="btnradio" value="1" id="btnradio1"
-                                    autocomplete="off" checked>
-                                <label class="" for="btnradio1">Email Id</label>
-                            </div>
-							<div class="form-radio" role="group"
-                                aria-label="Basic radio">
-                                <input type="radio" class="" name="btnradio" value="2" id="btnradio2"
-                                    autocomplete="off">
-                                <label class=" " for="btnradio2">Mobile No</label>
-                            </div>
-				</div>
+				<span>You will get a OTP via SMS</span>
+				<input type="password" placeholder="Employee ID" value="****" class="mt-5" />
 				<!-- <a href="../dashboard/dashboard2.html" class="ghost mt-4">Sign Up</a> -->
-				<a href="../examples/otp.html" class="ghost mt-4">Send OTP</a>
+				<a href="../dashboard/dashboard2.html" class="ghost mt-4">Verify</a>
 			</form>
 		</div>
 		<div class="form-container sign-in-container">
 			<form action="#">
 				<img src="../../assets/images/logo.png" alt="" class="login-logo" />
-				<h1>Existing User</h1>
-				<span>Please fill in the details to login</span>
-				<input type="text" placeholder="Mobile No" value="Mobile Number" class="mt-5" />
-				<span class="mt-4" style="font-weight: bold;">-- Or --</span>
-				<input type="text" placeholder="Email ID" value="Email ID" class="mt-2 mb-2" />
-				<!-- <input type="text" placeholder="DOB" value="DOB" /> -->
-				<!-- <a href="#">Forgot your password?</a> -->
-				<!-- <a href="../dashboard/dashboard2.html" class="ghost">Sign In</a> -->
-				<a href="../examples/otp.html" class="ghost">Send OTP</a>
+				<h1>Verification</h1>
+				<!-- <div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div> -->
+				<span>You will get a OTP via SMS</span>
+				<input type="password" placeholder="Employee ID" value="****" class="mt-5" />
+				<!-- <a href="../dashboard/dashboard2.html" class="ghost mt-4">Sign Up</a> -->
+				<a href="../dashboard/dashboard2.html" class="ghost mt-4">Verify</a>
 			</form>
 		</div>
 		<div class="overlay-container">
@@ -405,7 +356,7 @@ font-size: 12px;
 				<div class="overlay-panel overlay-right">
 					<h1>Hello, Friend!</h1>
 					<p>Enter your personal details and start journey with us</p>
-					<button class="ghost" id="signUp">Sign Up</button>
+					<!-- <button class="ghost" id="signUp">Sign Up</button> -->
 				</div>
 			</div>
 		</div>
