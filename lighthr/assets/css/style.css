@@ -292,3 +292,23 @@ text-align: left !important;
 .reportingstat .themerowtable tr td {
   padding: 8px;
 }
+
+.recent-comment .notice-heading {
+  font-size: 16px;
+}
+.recent-comment .text-muted {
+  font-size: 14px;
+}
+
+.footerpanel {
+  padding: 20px 7px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f4f4f4;
+}
+.footerpanel .primary {
+  background: #4377c9;
+}
+.footerpanel .readmorebtn {
+  padding: 10px 20px;
+}
