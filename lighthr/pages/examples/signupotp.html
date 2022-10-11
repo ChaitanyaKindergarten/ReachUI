@@ -315,22 +315,8 @@ a.ghost{
 </style>>
 
 <body>
-	<div class="container left-panel-active" id="container">
+	<div class="container right-panel-active" id="container">
 		<div class="form-container sign-up-container">
-			<form action="#">
-				<img src="../../assets/images/logo.png" alt="" class="login-logo" />
-				<h1>Existing User</h1>
-				<span>Please fill in the details to login</span>
-				<input type="text" placeholder="Mobile No" value="Mobile Number" class="mt-5" />
-				<span class="mt-4 orspan" ><span>Or sign in with</span></span>
-				<input type="text" placeholder="Email ID" value="Email ID" class="mt-2 mb-2" />
-				<!-- <input type="text" placeholder="DOB" value="DOB" /> -->
-				<!-- <a href="#">Forgot your password?</a> -->
-				<!-- <a href="../dashboard/dashboard2.html" class="ghost">Sign In</a> -->
-				<a href="../examples/otp.html" class="ghost">Send OTP</a>
-			</form>
-		</div>
-		<div class="form-container sign-in-container">
 			<form action="#">
 				<img src="../../assets/images/logo.png" alt="" class="login-logo" />
 				<h1>Verification</h1>
@@ -344,6 +330,20 @@ a.ghost{
 				<!-- <a href="../dashboard/dashboard2.html" class="ghost mt-4">Sign Up</a> -->
 				<a href="../dashboard/dashboard2.html" class="ghost mt-4">Verify</a>
 			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form action="#">
+				<img src="../../assets/images/logo.png" alt="" class="login-logo" />
+				<h1>Existing User</h1>
+				<span>Please fill in the details to login</span>
+				<input type="text" placeholder="Mobile No" value="Mobile Number" class="mt-5" />
+				<span class="mt-4 orspan"></span>
+				<input type="text" placeholder="Email ID" value="Email ID" class="mt-2 mb-2" />
+				<!-- <input type="text" placeholder="DOB" value="DOB" /> -->
+				<!-- <a href="#">Forgot your password?</a> -->
+				<!-- <a href="../dashboard/dashboard2.html" class="ghost">Sign In</a> -->
+				<a href="../examples/otp.html" class="ghost">Send OTP</a>
+			</form>
 
 			
 		</div>
@@ -352,12 +352,14 @@ a.ghost{
 				<div class="overlay-panel overlay-left">
 					<h1>Welcome Back!</h1>
 					<p>To keep connected with us please login with your personal info</p>
-					<button class="ghost" id="signIn">Sign In</button>
+					<!-- <button class="ghost" id="signIn">Sign In</button> -->
+					<a href="../examples/login-register.html" class="ghost">Sign In</a>
 				</div>
 				<div class="overlay-panel overlay-right">
 					<h1>Hello, Friend!</h1>
 					<p>Enter your personal details and start journey with us</p>
-					<a href="../examples/register.html" class="ghost">Sign Up</a>
+					<!-- <button class="ghost" id="signUp">Verify OTP</button> -->
+					<a href="../examples/register.html" class="ghost">Send OTP</a>
 				</div>
 			</div>
 		</div>
