@@ -42,3 +42,8 @@ function reportChart() {
   pieSeries.hiddenState.properties.endAngle = -90;
   pieSeries.hiddenState.properties.startAngle = -90;
 }
+
+function searchCv()
+{
+$('#tblSearchCv').show();
+}

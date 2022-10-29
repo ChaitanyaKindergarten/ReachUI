@@ -304,10 +304,10 @@
                             <li class="">
                                 <a href="../admin/admin-all-services.html">Request</a>
                             </li>
-                            <li class="active">
+                            <li class="">
                                 <a href="../admin/admin-attendance.html">Attendance</a>
                             </li>
-                            <li class="">
+                            <li class="active">
                                 <a href="../admin/admin-SearchCV.html">Search CV</a>
                             </li>
                             <li class="">
@@ -523,16 +523,16 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <ul class="breadcrumb breadcrumb-style ">
                             <li class="breadcrumb-item">
-                                <h4 class="page-title">Admin Attendance</h4>
+                                <h4 class="page-title">Admin Search CV</h4>
                             </li>
                             <li class="breadcrumb-item bcrumb-1">
                                 <a href="../../index.html">
                                     <i class="fas fa-home"></i> Home</a>
                             </li>
                             <li class="breadcrumb-item bcrumb-2">
-                                <a href="#" onClick="return false;">Attendance</a>
+                                <a href="#" onClick="return false;">Search CV</a>
                             </li>
-                            <li class="breadcrumb-item active">Admin Attendance</li>
+                            <li class="breadcrumb-item active">Admin Search CV</li>
                         </ul>
                     </div>
                 </div>
@@ -562,93 +562,308 @@
                                     <div class="card">
                                         <div class="chat">
                                             <div class="chat-header clearfix">
-                                                <img src="../../assets/images/user/user2.jpg" alt="avatar">
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-sm-6">
-                                                        <div class="chat-about">
-                                                            <div class="chat-with">Maria Smith</div>
-                                                            <div class="chat-num-messages">Software Developer</div>
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Keywords (Any)</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="text" id="email_address1" class="form-control"
+                                                                       placeholder="Enter your Keywords">
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-sm-6">
-                                                        <div class="chat-about">
-                                                            <div class="chat-with">Employee ID</div>
-                                                            <div class="chat-num-messages">IM062587UT</div>
+                                                    <!--<div class="col-md-3">
+        <label for="email_address">Keywords (All)</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" id="email_address1" class="form-control"
+                       placeholder="Enter your Keywords">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="email_address">Keywords (Exact)</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" id="email_address1" class="form-control"
+                       placeholder="Enter your Keywords">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="email_address">Keywords (Exclude)</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" id="email_address1" class="form-control"
+                       placeholder="Enter your Keywords">
+            </div>
+        </div>
+    </div>-->
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Current Location</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <div class="form-group default-select select2Style">
+                                                                    <select class="form-control select2" data-placeholder="Select">
+                                                                        <option>Please Choose</option>
+                                                                        <option>Any Arab Country</option>
+                                                                        <option>Any GCC Country</option>
+                                                                        <option>Any European Country</option>
+                                                                        <option>Any Anglophone Country</option>
+                                                                        <option>United Arab Emirates</option>
+                                                                        <option>Abu Dhabi</option>
+                                                                        <option>Dubai</option>
+                                                                        <option>Fujairah</option>
+                                                                        <option>Sharjah</option>
+                                                                        <option>Ajman</option>
+                                                                        <option>Ras al khaimah</option>
+                                                                        <option>Umm Al Quwain</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-sm-6">
-                                                        <div class="chat-about">
-                                                            <div class="chat-with">Joining Date</div>
-                                                            <div class="chat-num-messages">12 January 2015</div>
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Nationality</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <div class="form-group default-select select2Style">
+                                                                    <select class="form-control select2" data-placeholder="Select">
+                                                                        <option>Please Choose a Nationality</option>
+                                                                        <option>Any Arab Country</option>
+                                                                        <option>Any GCC Country</option>
+                                                                        <option>Any European Country</option>
+                                                                        <option>Any CIS National</option>
+                                                                        <option>Afghan</option>
+                                                                        <option>Albanian</option>
+                                                                        <option>Algerian</option>
+                                                                        <option>
+                                                                            American
+                                                                        </option>
+                                                                        <option>Emirati (UAE)</option>
+                                                                        <option>Korean (north)</option>
+                                                                        <option>Indian</option>
+                                                                        <option>Iranian</option>
+                                                                        <option>Iraqi</option>
+                                                                        <option>Swedish</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-sm-6">
-                                                        <div class="chat-about">
-                                                            <div class="chat-with">Department</div>
-                                                            <div class="chat-num-messages">Account</div>
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Gender</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Please Gender</option>
+                                                                    <option>Male</option>
+                                                                    <option>Female</option>
+
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                                <div class="row">
+
+
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Current Employer</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <input type="text" id="email_address1" class="form-control"
+                                                                       placeholder="Enter Current Employer">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Availability to join (Notice period)</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>No preference</option>
+                                                                    <option>Immediately</option>
+                                                                    <option>15 days or less</option>
+                                                                    <option>1 month or less</option>
+                                                                    <option>3 month or less</option>
+                                                                    <option>6 month or less</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Basic education</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Any</option>
+                                                                    <option>Intermediate school</option>
+                                                                    <option>Secondary school</option>
+                                                                    <option>Diploma</option>
+                                                                    <option>Bachelor of architecture</option>
+                                                                    <option>Bachelor of arts</option>
+                                                                    <option>Bachelor of business administration</option>
+                                                                    <option>Bachelor of commerce</option>
+                                                                    <option>Other</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Post-Graduation</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Choose a course</option>
+                                                                    <option>Any</option>
+                                                                    <option>Doctor of Medicine (MD)</option>
+                                                                    <option>Doctor of Surgery (MS)</option>
+                                                                    <option>Diploma</option>
+                                                                    <option>Master of architecture</option>
+                                                                    <option>Master of arts</option>
+                                                                    <option>Master of commerce</option>
+                                                                    <option>Master of commerce</option>
+                                                                    <option>Master of education</option>
+                                                                    <option>Master of laws (LLM)</option>
+                                                                    <option>Master of Technology / engineering</option>
+                                                                    <option>Other</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="col-md-3">
+                                                            <label for="email_address">Visa status</label>
+                                                            <div class="form-group">
+                                                                <div class="form-line">
+                                                                    <select class="form-control select2" data-placeholder="Select">
+                                                                        <option>Employment Visa</option>
+                                                                        <option>Tourist Visa</option>
+                                                                        <option>Family visa</option>
+                                                                        <option>Golden visa</option>
+                                                                        <option>Others</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label for="email_address">Driving license</label>
+                                                            <div class="form-group">
+                                                                <div class="form-line">
+                                                                    <select class="form-control select2" data-placeholder="Select">
+                                                                        <option>Not priority</option>
+                                                                        <option>Yes</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label for="email_address">Languages Known</label>
+                                                            <div class="form-group">
+                                                                <div class="form-line">
+                                                                    <input type="text" id="email_address1"
+                                                                           placeholder="">&nbsp;&nbsp;
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label for="email_address">Department (functional area)</label>
+                                                            <div class="form-group">
+                                                                <div class="form-line">
+                                                                    <select class="form-control select2" data-placeholder="Select">
+                                                                        <option>Accounts / taxation / audit / company secretary</option>
+                                                                        <option>Administration</option>
+                                                                        <option>Advertising / media planning / PR</option>
+                                                                        <option>Architecture / Interior design</option>
+                                                                        <option>Buying / purchase / procurement / vendor management</option>
+                                                                        <option>Cabin crew flight attendant / steward / air hostess</option>
+                                                                        <option>Cashier / teller / billing &amp; payment</option>
+                                                                        <option>Contract management / estimation / tendering / quantity surveying</option>
+                                                                        <option>Corporate planning / consulting / strategy / M&amp;A</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Work Experience</label>
+                                                        <div class="col-md-2">
+                                                            <input type="text" id="email_address1"
+                                                                   placeholder="Min">&nbsp;&nbsp;
+                                                            <input type="text" id="email_address1"
+                                                                   placeholder="Max">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Monthly Salary</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <div class="col-md-2">
+                                                                    <input type="text" id="email_address1"
+                                                                           placeholder="Min">&nbsp;&nbsp;
+                                                                    <input type="text" id="email_address1"
+                                                                           placeholder="Max">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label for="email_address">Age</label>
+                                                        <div class="form-group">
+                                                            <div class="form-line">
+                                                                <div class="col-md-2">
+                                                                    <input type="text" id="email_address1"
+                                                                           placeholder="Min">&nbsp;&nbsp;
+                                                                    <input type="text" id="email_address1"
+                                                                           placeholder="Max">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <a href="#" onclick="searchCv();" class="ghost btn btn-info">Search</a>
+                                                    </div>
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="card project_widget">
-                                        <div class="header">
-                                        </div>
                                         <div class="body">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-sm-6">
-                                                    <div class="text-center m-b-20">
-                                                        <h3 class="m-b-10 col-green">08:00</h3>
-                                                        <div class="text font-15 m-b-5">Average Working Hours</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-sm-6">
-                                                    <div class="text-center m-b-20">
-                                                        <h3 class="m-b-10 col-green">10:30 AM</h3>
-                                                        <div class="text font-15 m-b-5">Average In Time</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-sm-6">
-                                                    <div class="text-center m-b-20">
-                                                        <h3 class="m-b-10 col-green">07:30 PM</h3>
-                                                        <div class="text font-15 m-b-5">Average Out Time</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-sm-6">
-                                                    <div class="text-center m-b-20">
-                                                        <h3 class="m-b-10 col-green">01:00</h3>
-                                                        <div class="text font-15 m-b-5">Average Break Time</div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="table-responsive">
-                                                <table class="table table-hover js-basic-example contact_list">
+                                              <table class="table table-hover js-basic-example contact_list" id="tblSearchCv" style="display:none">
                                                     <thead>
                                                         <tr>
-                                                            <th class="center"> Date </th>
-                                                            <th class="center"> Check In </th>
-                                                            <th class="center"> Check Out </th>
-                                                            <th class="center"> Working Hours </th>
-                                                            <th class="center"> Shift </th>
-                                                            <th class="center"> Status </th>
+                                                            <th class="center"> Work Experience </th>
+                                                            <th class="center"> Current Location </th>
+                                                            <th class="center"> Nationality </th>
+                                                            <th class="center"> Gender </th>
+                                                            <th class="center"> Current designation </th>
+                                                            <th class="center"> Education details </th>
                                                             <th class="center"> Action </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr class="odd gradeX">
-                                                            <td class="center">10-02-2018</td>
-                                                            <td class="center col-green">10:28</td>
-                                                            <td class="center col-green">19:32</td>
-                                                            <td class="center col-green">08:04</td>
-                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">5 Years</td>
+                                                            <td class="center col-green">Dubai</td>
+                                                            <td class="center col-green">Emirati (UAE)</td>
+                                                            <td class="center col-green">Female</td>
+                                                            <td class="center">Sr.Software Engineer</td>
                                                             <td class="center">
-                                                                <div class="badge col-green">Present</div>
+
+                                                                Master in computer application<!--<div class="badge col-green">Present</div>-->
                                                             </td>
                                                             <td class="center">
-                                                                
+
                                                                 <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
                                                                 </a>
@@ -658,16 +873,16 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
-                                                            <td class="center">11-02-2018</td>
-                                                            <td class="center col-red">10:32</td>
-                                                            <td class="center col-green">19:32</td>
-                                                            <td class="center col-green">08:00</td>
-                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">6 Years</td>
+                                                            <td class="center col-green">Dubai</td>
+                                                            <td class="center col-green">Emirati (UAE)</td>
+                                                            <td class="center col-green">Female</td>
+                                                            <td class="center">Software Engineer</td>
                                                             <td class="center">
-                                                                <div class="badge col-green">Present</div>
+                                                                Master in computer application<!--<div class="badge col-green">Present</div>-->
                                                             </td>
                                                             <td class="center">
-                                                               
+
                                                                 <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
                                                                 </a>
@@ -677,16 +892,17 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
-                                                            <td class="center">12-02-2018</td>
-                                                            <td class="center">-</td>
-                                                            <td class="center">-</td>
-                                                            <td class="center">-</td>
-                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">10 Years</td>
+                                                            <td class="center col-green">Dubai</td>
+                                                            <td class="center col-green">Emirati (UAE)</td>
+                                                            <td class="center col-green">Female</td>
+                                                            <td class="center">Accounting Manager</td>
                                                             <td class="center">
-                                                                <div class="badge col-red">Leave</div>
+
+                                                                MBA<!--<div class="badge col-green">Present</div>-->
                                                             </td>
                                                             <td class="center">
-                                                               
+
                                                                 <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
                                                                 </a>
@@ -696,16 +912,17 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
-                                                            <td class="center">13-02-2018</td>
-                                                            <td class="center col-red">10:35</td>
-                                                            <td class="center col-green">19:31</td>
-                                                            <td class="center col-red">07:56</td>
-                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">9 Years</td>
+                                                            <td class="center col-green">Dubai</td>
+                                                            <td class="center col-green">Emirati (UAE)</td>
+                                                            <td class="center col-green">Male</td>
+                                                            <td class="center">Manager</td>
                                                             <td class="center">
-                                                                <div class="badge col-green">Present</div>
+
+                                                                MBA<!--<div class="badge col-green">Present</div>-->
                                                             </td>
                                                             <td class="center">
-                                                               
+
                                                                 <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
                                                                 </a>
@@ -715,16 +932,17 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
-                                                            <td class="center">14-02-2018</td>
-                                                            <td class="center col-green">10:25</td>
-                                                            <td class="center col-red">19:29</td>
-                                                            <td class="center col-green">08:04</td>
-                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">12 Years</td>
+                                                            <td class="center col-green">Dubai</td>
+                                                            <td class="center col-green">Emirati (UAE)</td>
+                                                            <td class="center col-green">Male</td>
+                                                            <td class="center">Sr.Manager</td>
                                                             <td class="center">
-                                                                <div class="badge col-green">Present</div>
+
+                                                                Master of commerce<!--<div class="badge col-green">Present</div>-->
                                                             </td>
                                                             <td class="center">
-                                                               
+
                                                                 <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
                                                                 </a>
@@ -734,16 +952,17 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
-                                                            <td class="center">15-02-2018</td>
-                                                            <td class="center">-</td>
-                                                            <td class="center">-</td>
-                                                            <td class="center">-</td>
-                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">3 Years</td>
+                                                            <td class="center col-green">Dubai</td>
+                                                            <td class="center col-green">Emirati (UAE)</td>
+                                                            <td class="center col-green">Male</td>
+                                                            <td class="center">surgeon</td>
                                                             <td class="center">
-                                                                <div class="badge col-cyan">Weekend</div>
+
+                                                                Doctor of Surgery (MS)<!--<div class="badge col-green">Present</div>-->
                                                             </td>
                                                             <td class="center">
-                                                               
+
                                                                 <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
                                                                 </a>
@@ -753,16 +972,17 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
-                                                            <td class="center">16-02-2018</td>
-                                                            <td class="center">-</td>
-                                                            <td class="center">-</td>
-                                                            <td class="center">-</td>
-                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">15 Years</td>
+                                                            <td class="center col-green">Dubai</td>
+                                                            <td class="center col-green">Emirati (UAE)</td>
+                                                            <td class="center col-green">Female</td>
+                                                            <td class="center">Sr.Software Engineer</td>
                                                             <td class="center">
-                                                                <div class="badge col-cyan">Weekend</div>
+
+                                                                Master in computer application<!--<div class="badge col-green">Present</div>-->
                                                             </td>
                                                             <td class="center">
-                                                              
+
                                                                 <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
                                                                 </a>
@@ -772,16 +992,17 @@
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
-                                                            <td class="center">17-02-2018</td>
-                                                            <td class="center col-green">10:28</td>
-                                                            <td class="center col-green">19:35</td>
-                                                            <td class="center col-green">08:07</td>
-                                                            <td class="center">Shift 1</td>
+                                                            <td class="center">5 Years</td>
+                                                            <td class="center col-green">Dubai</td>
+                                                            <td class="center col-green">Emirati (UAE)</td>
+                                                            <td class="center col-green">Male</td>
+                                                            <td class="center">Sr.Software Engineer</td>
                                                             <td class="center">
-                                                                <div class="badge col-green">Present</div>
+
+                                                                Master in computer application<!--<div class="badge col-green">Present</div>-->
                                                             </td>
                                                             <td class="center">
-                                                              
+
                                                                 <a href="edit-leave.html" class="btn btn-tbl-edit">
                                                                     <i class="material-icons">mode_edit</i>
                                                                 </a>
@@ -790,18 +1011,28 @@
                                                                 </a>
                                                             </td>
                                                         </tr>
+                                                        <tr class="odd gradeX">
+                                                            <td class="center">12 Years</td>
+                                                            <td class="center col-green">Dubai</td>
+                                                            <td class="center col-green">Emirati (UAE)</td>
+                                                            <td class="center col-green">Male</td>
+                                                            <td class="center">Operational Manager</td>
+                                                            <td class="center">
+
+                                                                Master of commerce<!--<div class="badge col-green">Present</div>-->
+                                                            </td>
+                                                            <td class="center">
+
+                                                                <a href="edit-leave.html" class="btn btn-tbl-edit">
+                                                                    <i class="material-icons">mode_edit</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-delete">
+                                                                    <i class="material-icons">close</i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+
                                                     </tbody>
-                                                    <!-- <tfoot>
-                                                        <tr>
-                                                            <th class="center"> Date </th>
-                                                            <th class="center"> Check In </th>
-                                                            <th class="center"> Check Out </th>
-                                                            <th class="center"> Working Hours </th>
-                                                            <th class="center"> Shift </th>
-                                                            <th class="center"> Status </th>
-                                                            <th class="center"> Action </th>
-                                                        </tr>
-                                                    </tfoot> -->
                                                 </table>
                                             </div>
                                         </div>
