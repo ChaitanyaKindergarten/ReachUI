@@ -1,0 +1,902 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Reach</title>
+    <!-- Favicon-->
+    <!-- <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon"> -->
+    <!-- Plugins Core Css -->
+    <link href="../../assets/css/common.min.css" rel="stylesheet">
+    <link href="../../assets/css/form.min.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+    <link href="../../assets/css/pages/extra_pages.css" rel="stylesheet" />
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="../../assets/css/styles/all-themes.css" rel="stylesheet" />
+</head>
+
+<style>
+    textarea {
+        width: 250%;
+        height: 100px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+     /*   background-color: #f8f8f8;*/
+        font-size: 16px;
+        resize: none;
+        text-emphasis-color:black;
+    }
+    input#session-date {
+        display: inline-block;
+        position: relative;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        background: transparent;
+        bottom: 0;
+        color: transparent;
+        cursor: pointer;
+        height: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+</style>
+
+<body>
+    <section class="">
+        <div class="container-fluid">
+            <!--<ul class="nav profile-tab-box p-l-20 mb-0">
+
+                <li class="nav-item tab-all">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#Education">Education Details</a>
+                </li>
+                <li class="nav-item tab-all">
+                    <a class="nav-link " data-bs-toggle="tab" href="#Keyskills1">Key skills</a>
+                </li>
+                <li class="nav-item tab-all">
+                    <a class="nav-link" data-bs-toggle="tab" href="#Professional">Professional Details</a>
+                </li>
+                <li class="nav-item tab-all">
+                    <a class="nav-link" data-bs-toggle="tab" href="#Employment">Employment</a>
+                </li>
+                <li class="nav-item tab-all">
+                    <a class="nav-link" data-bs-toggle="tab" href="#Assignment">IT Skills</a>
+                </li>
+                <li class="nav-item tab-all">
+                    <a class="nav-link" data-bs-toggle="tab" href="#Assignment">Education</a>
+                </li>
+                <li class="nav-item tab-all">
+                    <a class="nav-link" data-bs-toggle="tab" href="#Assignment">Profile Summary</a>
+                </li>
+                <li class="nav-item tab-all">
+                    <a class="nav-link" data-bs-toggle="tab" href="#CVupload">CV</a>
+                </li>
+            </ul>-->
+            <div class="tab-content">
+                <div class="profile-tab-box">
+                    <div class="p-l-20">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="card">
+                                    <div class="chat">
+                                        <div class="chat-header clearfix">
+                                            <div class="row">
+                                                <a class="nav-link active" style="font-size:30px" data-bs-toggle="tab" href="#CV Headline">CV Headline</a>
+                                                <div class="col-md-6">
+                                                    <strong> Keep it updated for better job opportunities </strong>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <br />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <textarea placeholder="Give your profile a one line introduction" id="w3review" name="w3review" rows="2" cols="500"></textarea>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+
+                                                </div>
+
+                                            </div>
+                                            <!--<div class="row">
+                                                <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Save</button>
+                                                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Cancel</button>
+                                            </div>-->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-tab-box">
+                    <div class="p-l-20">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="card">
+                                    <div class="chat">
+                                        <div class="chat-header clearfix">
+                                            <div class="row">
+                                                <a class="nav-link active" style="font-size:30px" data-bs-toggle="tab" href="#Education">Key Skills</a>
+                                                <div class="col-md-6">
+                                                    <strong> Talk about your professional strengths, skills you will apply to work </strong>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <br />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for="email_address">Key Skills</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Please select</option>
+                                                                    <option>Account Handling</option>
+                                                                    <option>Adobe Photoshop</option>
+                                                                    <option>Accounts Management</option>
+                                                                    <option>Financial Analysis Assurance</option>
+                                                                    <option>SQL</option>
+                                                                    <option>PHP MySQL</option>
+                                                                    <option>MS SQL </option>
+                                                                    <option>SQLserver</option>
+                                                                    <option>MS SQL Server</option>
+                                                                    <option>SQL Server 2005</option>
+                                                                    <option>ASQLite</option>
+                                                                    <option>Fresher Trainee</option>
+                                                                    <option>MCA Fresher</option>
+                                                                </select>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+
+                                                </div>
+
+                                            </div>
+                                            <!--<div class="row">
+                                                <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Save</button>
+                                                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Cancel</button>
+                                            </div>-->
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-tab-box">
+                    <div class="p-l-20">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="card">
+                                    <div class="chat">
+                                        <div class="chat-header clearfix">
+                                            <div class="row">
+                                                <a class="nav-link active" style="font-size:30px" data-bs-toggle="tab" href="#Education">Professional Details</a>
+                                                <div class="col-md-6">
+                                                    <strong>Enter your Professional Details</strong>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Industry</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="">
+                                                                    <option>Select the industry your company belongs to</option>
+                                                                    <option>Accounting & Auditing</option>
+                                                                    <option>Advertising / PR / Event Management</option>
+                                                                    <option>Air Conditioning / Refrigeration / HVAC</option>
+                                                                    <option>Airlines / Aviation</option>
+                                                                    <option>Architecture / Interior Designing</option>
+                                                                    <option>Automotive / Automobile / Auto Accessories</option>
+                                                                    <option>Architecture / Interior Designing</option>
+                                                                    <option>Banking / Financial Services / Broking</option>
+                                                                    <option>Ceramics / Sanitary ware</option>
+                                                                    <option>Concrete / Readymix / Cement</option>
+                                                                    <option>Consulting / Management Consulting / Advisory Services</option>
+                                                                    <option>Furniture/Furnishings/Home Decor</option>
+                                                                    <option>Gold / Gems & Jewellery</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Functional Area</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <select class="form-control select2" data-placeholder="">
+                                                                <option>Select the department you work in</option>
+                                                                <option>Fresh Graduates/Management Trainee/Intern /No Experience</option>
+                                                                <option>Engineering</option>
+                                                                <option>Administration</option>
+                                                                <option>Advertising / Media Planning / PR</option>
+                                                                <option>Architecture / Interior Designing</option>
+                                                                <option>Automotive / Automobile / Auto Accessories</option>
+                                                                <option>Architecture / Interior Designing</option>
+                                                                <option>Banking / Financial Services / Broking</option>
+                                                                <option>Ceramics / Sanitary ware</option>
+                                                                <option>Concrete / Readymix / Cement</option>
+                                                                <option>Consulting / Management Consulting / Advisory Services</option>
+                                                                <option>Furniture/Furnishings/Home Decor</option>
+                                                                <option>Cabin Crew / Flight Attendant / Steward / Air Hostess</option>
+                                                                <option>Cashier / Teller / Billing & Payment</option>
+                                                                <option>Data Entry / Operations / Back Office Processing</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Work Level</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="radio input-group"><input name="workLevel" type="hidden" id="workLevel" data-rel="required:fc_req" value=""><label for="rad-Student / Intern" class="check-pill display-true"><input tabindex="0" type="checkbox" id="rad-Student / Intern" name="workLevel" value="4"><span class="check-label">Student / Intern&nbsp;&nbsp;</span></label><label for="rad-Entry Level" class="check-pill display-true"><input tabindex="0" type="checkbox" id="rad-Entry Level" name="workLevel" value="1"><span class="check-label">Entry Level&nbsp;&nbsp;</span></label><label for="rad-Non Managerial Level" class="check-pill display-true"><input tabindex="0" type="checkbox" id="rad-Non Managerial Level" name="workLevel" value="2"><span class="check-label">Non Managerial Level&nbsp;&nbsp;</span></label><label for="rad-Managerial Level" class="check-pill display-true"><input tabindex="0" type="checkbox" id="rad-Managerial Level" name="workLevel" value="3"><span class="check-label">Managerial Level</span></label><label for="rad-Senior Management (AVP , VP , GM)" class="check-pill display-true"><input tabindex="0" type="checkbox" id="rad-Senior Management (AVP , VP , GM)" name="workLevel" value="5"><span class="check-label">Senior Management (AVP , VP , GM)&nbsp;</span></label><label for="rad-Top Management (CEO , CFO , Director)" class="check-pill display-true"><input tabindex="0" type="checkbox" id="rad-Top Management (CEO , CFO , Director)" name="workLevel" value="6"><span class="check-label">Top Management (CEO , CFO , Director)</span></label></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Availability To Join</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="radio input-group">
+                                                                <input name="noticePeriod" type="hidden" id="noticePeriod" data-rel="" value="">
+                                                                <label for="rad-Immediately" class="check-pill display-true">
+                                                                    <input tabindex="0" type="checkbox" id="rad-Immediately" name="noticePeriod" value="i"><span class="check-label">Immediately&nbsp;&nbsp;</span>
+                                                                </label><label for="rad-15 Days" class="check-pill display-true">
+                                                                    <input tabindex="0" type="checkbox" id="rad-15 Days" name="noticePeriod" value="f">
+                                                                    <span class="check-label">15 Days&nbsp;&nbsp;</span>
+                                                                </label><label for="rad-1 Month" class="check-pill display-true">
+                                                                    <input tabindex="0" type="checkbox" id="rad-1 Month" name="noticePeriod" value="1"><span class="check-label">1 Month&nbsp;&nbsp;</span>
+                                                                </label>
+                                                                <label for="rad-2 Months" class="check-pill display-true">
+                                                                    <input tabindex="0" type="checkbox" id="rad-2 Months" name="noticePeriod" value="2">
+                                                                    <span class="check-label">2 Months&nbsp;&nbsp;</span>
+                                                                </label><label for="rad-3 Months" class="check-pill display-true"><input tabindex="0" type="checkbox" id="rad-3 Months" name="noticePeriod" value="3"><span class="check-label">3 Months&nbsp;&nbsp;</span></label><label for="rad-6 Months" class="check-pill display-true"><input tabindex="0" type="checkbox" id="rad-6 Months" name="noticePeriod" value="6"><span class="check-label">6 Months</span></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="email_address">Monthly Salary</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <select class="form-control select2" data-placeholder="">
+                                                                <option>US Dollar</option>
+                                                                <option>Saudi Riyal</option>
+                                                                <option>UAE Dirham</option>
+                                                                <option>Bahraini Dinar</option>
+                                                                <option>Omani Rial</option>
+                                                                <option>Qatari Riyal</option>
+                                                                <option>Indian Rupees</option>
+                                                                <option>Euro</option>
+                                                                <option>British Pound</option>
+                                                                <option>Kuwaiti Dinar</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-line">
+                                                            <input type="text" id="email_aAMt" class="form-control"
+                                                                   placeholder="Amount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+
+                                                        </div>
+                                                        <div class="form-line">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="email_address">Total Work Experience</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <input type="text" id="email_address1" class="form-control"
+                                                                   placeholder="Years">
+                                                        </div>
+                                                        <div class="form-line">
+                                                            <input type="text" id="email_Months" class="form-control"
+                                                                   placeholder="Months">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <!--<div class="row">
+                                                    <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Save</button>
+                                                    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Cancel</button>
+                                                </div>-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-tab-box">
+                    <div class="p-l-20">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="card">
+                                    <div class="chat">
+                                        <div class="chat-header clearfix">
+                                            <div class="row">
+
+                                                <a class="nav-link active" style="font-size:30px" data-bs-toggle="tab" href="#Education">Employment Details </a>
+                                                <div class="col-md-4">
+                                                    <strong>  Enter your  Employment Details </strong>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <br />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Company</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <input type="text" id="email_address1" class="form-control"
+                                                                   placeholder="Enter your Company">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Designation</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Please Select Company</option>
+                                                                    <option><strong>A</strong>ccountant</option>
+                                                                    <option><strong>A</strong>ccounts Executive</option>
+                                                                    <option><strong>A</strong>dministrator</option>
+                                                                    <option>A</strong>nalyst</li>
+                                                                    <option><strong>A</strong>ssistant Manager</option>
+                                                                    <option><strong>A</strong>dvisor</option>
+                                                                    <option><strong>A</strong>rchitect</option>
+                                                                    <option>System <strong>Ad</strong>ministrator</option>
+                                                                    <option><strong>A</strong>uditor</option>
+                                                                    <option><strong>A</strong>ccounts Manager</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Company Location</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <input type="text" id="email_address1" class="form-control"
+                                                                   placeholder="Tell us your employer location">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Working Since</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <input type="date" id="session-date" name="session-date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Application No</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <input type="text" id="email_address1" class="form-control"
+                                                                   placeholder="Enter your Application No">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Place of Birth</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Please select</option>
+                                                                    <option>India</option>
+                                                                    <option>Australia</option>
+                                                                    <option>USA</option>
+                                                                    <option>Poland</option>
+                                                                    <option>Afghanistan</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Latest Hire Date</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <input type="date" id="session-date" name="session-date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Country of Birth</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Please select</option>
+                                                                    <option>India</option>
+                                                                    <option>Australia</option>
+                                                                    <option>USA</option>
+                                                                    <option>Poland</option>
+                                                                    <option>Afghanistan</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Original Hire Date</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <input type="date" id="session-date" name="session-date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Nationality</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Please select</option>
+                                                                    <option>India</option>
+                                                                    <option>Australia</option>
+                                                                    <option>USA</option>
+                                                                    <option>Poland</option>
+                                                                    <option>Afghanistan</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                                <!--<div class="row">
+                                                    <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Save</button>
+                                                    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Cancel</button>
+                                                </div>-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-tab-box">
+                    <div class="p-l-20">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="card">
+                                    <div class="chat">
+                                        <div class="chat-header clearfix">
+
+                                            <div class="row">
+                                                <a class="nav-item tab-all nav-link active" style="font-size:30px" data-bs-toggle="tab" href="#Education">Education Details</a>
+                                                <div class="col-md-6">
+                                                    <strong> Add value to your profile by talking your educational qualification</strong>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <br />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Highest Education:</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <!--<input type="text" id="email_address1" class="form-control"
+                                                            placeholder="Enter your Email Id">-->
+
+                                                            <select class="form-control select2" data-placeholder="Select">
+                                                                <option>Please select education</option>
+                                                                <option>Doctorate</option>
+                                                                <option>Masters</option>
+                                                                <option>Basic (Bachelors/Diploma/School)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Course:</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <!--<input type="text" id="email_address1" class="form-control"
+                                                            placeholder="Enter your Email Id">-->
+
+                                                            <select class="form-control select2" data-placeholder="Select">
+                                                                <option>Please select</option>
+                                                                <option>M.Phil</option>
+                                                                <option>Ph.D/Doctorate</option>
+                                                                <option>Chartered Accountant</option>
+                                                                <option>CA Inter</option>
+                                                                <option>Chartered Financial Analyst</option>
+                                                                <option>Company Secretary</option>
+                                                                <option>Doctor of Medicine (MD)</option>
+                                                                <option>Doctor of Surgery (MS)</option>
+                                                                <option>Master of Architecture</option>
+                                                                <option>Master of Arts</option>
+                                                                <option>MBA/PG Diploma in Business Mgmt</option>
+                                                                <option>Masters in Computer Application</option>
+                                                                <option>Bachelor of Architecture</option>
+                                                                <option>Bachelors in Computer Application</option>
+                                                                <option>Bachelor of Science</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">University / Institute:</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <input id="myDatePicker" class="flatPicker"
+                                                                   placeholder="Enter University / Institute Name you studied from...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Passing Year</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <input id="Passing Year" class="flatPicker"
+                                                                   placeholder="Eg.2015">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Institute Location</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Please select</option>
+                                                                    <option>Bahrain</option>
+                                                                    <option>Kuwait</option>
+                                                                    <option>Oman</option>
+                                                                    <option>Qatar</option>
+                                                                    <option>Saudi Arabia</option>
+                                                                    <option>United Arab Emirates</option>
+                                                                    <option>India</option>
+                                                                    <option>Afghanistan</option>
+                                                                    <option>Albania</option>
+                                                                    <option>Algeria</option>
+                                                                    <option>American Samoa</option>
+                                                                    <option>Andorra</option>
+                                                                    <option>Angola</option>
+                                                                    <option>Argentina</option>
+                                                                    <option>Armenia</option>
+                                                                    <option>Australia</option>
+                                                                    <option>Austria</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <!--<label for="email_address">Education Qualification</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option></option>
+                                                                    <option>India</option>
+                                                                    <option>Australia</option>
+                                                                    <option>USA</option>
+                                                                    <option>Poland</option>
+                                                                    <option>Afghanistan</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>-->
+                                                </div>
+
+
+
+
+                                                <!--<div class="row">
+                                                    <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Save</button>
+                                                    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Cancel</button>
+                                                </div>-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-tab-box">
+                    <div class="p-l-20">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="card">
+                                    <div class="chat">
+                                        <div class="chat-header clearfix">
+                                            <div class="row">
+                                                <a class="nav-item tab-all nav-link active" style="font-size:30px" data-bs-toggle="tab" href="#Personal">Personal Details</a>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Date of Birth</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <input type="date" id="session-date" name="session-date">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Gender</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Please Select Gender</option>
+                                                                    <option>Male</option>
+                                                                    <option>Female</option>
+                                                                    <option>Transgender</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Nationality</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Please select Nationality</option>
+                                                                    <option>India</option>
+                                                                    <option>Australia</option>
+                                                                    <option>USA</option>
+                                                                    <option>Poland</option>
+                                                                    <option>Afghanistan</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Marital Status</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <select class="form-control select2" data-placeholder="Select">
+                                                                    <option>Please select</option>
+                                                                    <option>Single</option>
+                                                                    <option>Married</option>
+                                                                    <option>Divorced</option>
+                                                                    <option>Widow(er)</option>
+                                                                    <option>Other</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Email Address</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <input type="text" id="email_address1" class="form-control"
+                                                                       placeholder="Enter Email ID">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">
+                                                        Alternate Email Address
+                                                    </label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <input type="text" id="email_address1" class="form-control"
+                                                                       placeholder="Enter Email ID">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">
+                                                        Contact Number
+                                                    </label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <input type="text" id="email_address1" class="form-control"
+                                                                       placeholder="Contact Number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email_address">
+                                                        Alternate Contact Number
+                                                    </label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <input type="text" id="email_address1" class="form-control"
+                                                                       placeholder="Alternate Contact Number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="profile-tab-box">
+                    <div class="p-l-20">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="card">
+                                    <div class="chat">
+                                        <div class="chat-header clearfix">
+
+                                            <div class="row">
+                                                <a class="nav-link" style="font-size:30px" data-bs-toggle="tab" href="#CVupload">CV Upload</a>
+                                                <div class="col-md-12">
+                                                    <strong>  A CV increases your chances by 60% of getting job offers </strong>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <br />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="email_address">Upload CV</label>
+                                                    <div class="form-group">
+                                                        <div class="form-line">
+                                                            <div class="form-group default-select select2Style">
+                                                                <input type="file" id="email_address1" class="form-control"
+                                                                       placeholder="Browse file to upload">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    Supported file formats: doc, rtf, docx, pdf | upto 1 mb
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <br />
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <button type="button" class="btn btn-primary m-t-15 waves-effect" style="width: auto;padding: 0px 20px;margin-top: 0px;margin-left: 8px;">Submit</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Plugins Js -->
+    <!--<script src="../../assets/js/common.min.js"></script>-->
+    <script src="../../assets/js/bundles/flatpickr.min.js"></script>
+    <!-- Custom Js -->
+    <script src="../../assets/js/admin.js"></script>
+    <script src="../../assets/js/pages/forms/flatpicker-data.js"></script>
+
+    <script src="../../assets/js/pages/forms/selectitem-data.js"></script>
+    <!-- Extra page Js -->
+
+
+    <script type="text/javascript">
+        var expanded = false;
+
+        function showCheckboxes() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from www.einfosoft.com/templates/admin/atrio/source/lighthr/pages/examples/login-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Oct 2022 06:54:49 GMT -->
+</html>
