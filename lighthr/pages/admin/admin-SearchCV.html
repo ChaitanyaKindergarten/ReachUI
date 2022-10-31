@@ -573,32 +573,32 @@
                                                         </div>
                                                     </div>
                                                     <!--<div class="col-md-3">
-        <label for="email_address">Keywords (All)</label>
-        <div class="form-group">
-            <div class="form-line">
-                <input type="text" id="email_address1" class="form-control"
-                       placeholder="Enter your Keywords">
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <label for="email_address">Keywords (Exact)</label>
-        <div class="form-group">
-            <div class="form-line">
-                <input type="text" id="email_address1" class="form-control"
-                       placeholder="Enter your Keywords">
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <label for="email_address">Keywords (Exclude)</label>
-        <div class="form-group">
-            <div class="form-line">
-                <input type="text" id="email_address1" class="form-control"
-                       placeholder="Enter your Keywords">
-            </div>
-        </div>
-    </div>-->
+                            <label for="email_address">Keywords (All)</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <input type="text" id="email_address1" class="form-control"
+                                           placeholder="Enter your Keywords">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="email_address">Keywords (Exact)</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <input type="text" id="email_address1" class="form-control"
+                                           placeholder="Enter your Keywords">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="email_address">Keywords (Exclude)</label>
+                            <div class="form-group">
+                                <div class="form-line">
+                                    <input type="text" id="email_address1" class="form-control"
+                                           placeholder="Enter your Keywords">
+                                </div>
+                            </div>
+                        </div>-->
                                                     <div class="col-md-3">
                                                         <label for="email_address">Current Location</label>
                                                         <div class="form-group">
@@ -830,16 +830,34 @@
                                                     <div class="col-md-3">
                                                         <a href="#" onclick="searchCv();" class="ghost btn btn-info">Search</a>
                                                     </div>
-                                                    </div>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="card project_widget">
                                         <div class="body">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    &nbsp;
+                                                </div>
+                                                <div class="col-md-3">
+                                                    &nbsp;
+                                                </div>
+                                                <div class="col-md-4">
+                                                    &nbsp;
+                                                </div>
+                                                <div class="col-md-2">
+                                                    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                                                    <a href="admin-SearchCVEmail.html" id="btnsendmail" style="display:none" class="ghost btn btn-info">Send Email</a>
+                                                </div>
+                                            </div>
                                             <div class="table-responsive">
-                                              <table class="table table-hover js-basic-example contact_list" id="tblSearchCv" style="display:none">
+
+                                                <table class="table table-hover js-basic-example contact_list" id="tblSearchCv" style="display:none">
+
                                                     <thead>
                                                         <tr>
                                                             <th class="center"> Candidate Name </th>
@@ -849,7 +867,12 @@
                                                             <th class="center"> Gender </th>
                                                             <th class="center"> Current designation </th>
                                                             <th class="center"> Education details </th>
-                                                            <th class="center"> Action </th>
+                                                            <th class="center">
+                                                                Action  <a href="#" class="btn btn-tbl-edit ">
+                                                                    <i class="material-icons">done</i>
+                                                                </a>
+                                                            </th>
+                                                           
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -872,6 +895,9 @@
                                                                 <a href="#" class="btn btn-tbl-delete">
                                                                     <i class="material-icons">close</i>
                                                                 </a>
+                                                                <a href="#" class="btn btn-tbl-edit ">
+                                                                    <i class="material-icons">done</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -892,6 +918,10 @@
                                                                 <a href="#" class="btn btn-tbl-delete">
                                                                     <i class="material-icons">close</i>
                                                                 </a>
+                                                                <a href="#" class="btn btn-tbl-edit ">
+                                                                    <i class="material-icons">done</i>
+                                                                </a>
+
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -912,6 +942,9 @@
                                                                 </a>
                                                                 <a href="#" class="btn btn-tbl-delete">
                                                                     <i class="material-icons">close</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-edit ">
+                                                                    <i class="material-icons">done</i>
                                                                 </a>
                                                             </td>
                                                         </tr>
@@ -934,6 +967,9 @@
                                                                 <a href="#" class="btn btn-tbl-delete">
                                                                     <i class="material-icons">close</i>
                                                                 </a>
+                                                                <a href="#" class="btn btn-tbl-edit ">
+                                                                    <i class="material-icons">done</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -954,6 +990,9 @@
                                                                 </a>
                                                                 <a href="#" class="btn btn-tbl-delete">
                                                                     <i class="material-icons">close</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-edit ">
+                                                                    <i class="material-icons">done</i>
                                                                 </a>
                                                             </td>
                                                         </tr>
@@ -976,6 +1015,9 @@
                                                                 <a href="#" class="btn btn-tbl-delete">
                                                                     <i class="material-icons">close</i>
                                                                 </a>
+                                                                <a href="#" class="btn btn-tbl-edit ">
+                                                                    <i class="material-icons">done</i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                         <tr class="odd gradeX">
@@ -997,7 +1039,12 @@
                                                                 <a href="#" class="btn btn-tbl-delete">
                                                                     <i class="material-icons">close</i>
                                                                 </a>
+                                                                <a href="#" class="btn btn-tbl-edit ">
+                                                                    <i class="material-icons">done</i>
+                                                                </a>
+
                                                             </td>
+
                                                         </tr>
                                                         <tr class="odd gradeX">
                                                             <td class="center">Marvan</td>
@@ -1017,6 +1064,9 @@
                                                                 </a>
                                                                 <a href="#" class="btn btn-tbl-delete">
                                                                     <i class="material-icons">close</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-edit ">
+                                                                    <i class="material-icons">done</i>
                                                                 </a>
                                                             </td>
                                                         </tr>
@@ -1038,6 +1088,9 @@
                                                                 </a>
                                                                 <a href="#" class="btn btn-tbl-delete">
                                                                     <i class="material-icons">close</i>
+                                                                </a>
+                                                                <a href="#" class="btn btn-tbl-edit ">
+                                                                    <i class="material-icons">done</i>
                                                                 </a>
                                                             </td>
                                                         </tr>

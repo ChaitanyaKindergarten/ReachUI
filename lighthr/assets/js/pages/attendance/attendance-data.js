@@ -46,4 +46,5 @@ function reportChart() {
 function searchCv()
 {
 $('#tblSearchCv').show();
+$('#btnsendmail').show();
 }
