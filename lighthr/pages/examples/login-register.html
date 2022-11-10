@@ -386,12 +386,24 @@ font-size: 12px;
 				<img src="../../assets/images/logo.png" alt="" class="login-logo" />
 				<h1>Existing User</h1>
 				<span>Please fill in the details to login</span>
-				<input type="text" placeholder="Mobile No" value="Mobile Number" class="mt-5" />
+				<!-- <input type="text" placeholder="Mobile No" value="Mobile Number" class="mt-5" />
 				<span class="mt-4 orspan"><span>Or sign in with</span></span>
-				<input type="text" placeholder="Email ID" value="Email ID" class="mt-2 mb-2" />
+				<input type="text" placeholder="Email ID" value="Email ID" class="mt-2 mb-2" /> -->
 				<!-- <input type="text" placeholder="DOB" value="DOB" /> -->
 				<!-- <a href="#">Forgot your password?</a> -->
 				<!-- <a href="../dashboard/dashboard2.html" class="ghost">Sign In</a> -->
+				
+				<div class="radiolayer mt-4">
+            <input type="radio" checked="checked" name="r1" onchange="show(this.value)"/>&nbsp;Continue with Email ID
+		</div>
+		<div class="radiolayer ">
+			<input type="radio" name="r1" id="e1" onchange="show2()"/>&nbsp;Continue with Mobile Number&nbsp;&nbsp;&nbsp;
+		</div>
+
+			<div id="sh2" class="mt-3" style="display:none;width: 100%;"><input type="text" placeholder="Mobile No" value="Mobile Number" class="" /></div>
+        
+        <div id="sh1" class="mt-3" style="display:block;width: 100%;" ><input type="text" placeholder="Email ID" value="Email ID" class="" /></div>
+     
 				<a href="../examples/otp.html" class="ghost">Send OTP</a>
 			</form>
 		</div>
@@ -433,6 +445,17 @@ signInButton.addEventListener("click", () => {
 	container.classList.remove("right-panel-active");
 });
 
+	</script>
+
+	<script>
+		  function show(str){
+                document.getElementById('sh2').style.display = 'none';
+                document.getElementById('sh1').style.display = 'block';
+            }
+            function show2(sign){
+                document.getElementById('sh2').style.display = 'block';
+                document.getElementById('sh1').style.display = 'none';
+            }
 	</script>
 
 
