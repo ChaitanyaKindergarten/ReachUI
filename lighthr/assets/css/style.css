@@ -366,3 +366,26 @@ text-align: left !important;
   width: 24px;
   cursor: pointer;
 }
+.chat-header .nav-link {
+  color: #9aa3a8;
+}
+#leave-select {
+  display: block;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-bottom: 1px solid #c2c2c2;
+  margin-top: 2px;
+}
+.custom-option{
+  position: relative;
+}
+.custom-option span{
+    background-color: #7fe385;
+    width: 100%;
+    padding: 1px 5px;
+    color: #0f4512;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+}

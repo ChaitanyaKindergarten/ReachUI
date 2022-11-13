@@ -533,15 +533,20 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <select class="col-12 m-t-20 p-l-0">
+                                    <div class="custom-option">
+                                        <select class="col-12 m-t-20 p-l-0" class="custom-select" id="leave-select">
                                             <option value="" disabled selected>Leave Type</option>
                                             <option value="2">Casual Leave</option>
                                             <option value="3">Sick Leave</option>
                                             <option value="4">Maternity Leave</option>
                                             <option value="1">Annual leave</option>
                                         </select>
-                                    </div>
+                                    
+                                    <span id="casual" style="display: none;">5 days available</span>
+                                    <span id="Sick" style="display: none;">4 days available</span>
+                                    <span id="Maternity" style="display: none;">56 days available</span>
+                                    <span id="Annual" style="display: none;">24 days available</span>
+                                </div>
                                 </div>
                             </div>
                             <div class="row clearfix">
@@ -585,7 +590,42 @@
     <!-- Custom Js -->
     <script src="../../assets/js/admin.js"></script>
     <script src="../../assets/js/pages/forms/flatpicker-data.js"></script>
-    <script src="../../assets/js/pages/forms/selectitem-data.js"></script>
+    <!-- <script src="../../assets/js/pages/forms/selectitem-data.js"></script> -->
+
+    <script>
+// .custom-select
+$(document).on("load", function () {
+        $("#casual").hide();
+        $("#Sick").hide();
+        $("#Maternity").hide();
+        $("#Annual").hide();
+});
+
+$('#leave-select').on('change', function () {
+    if(this.value === "1"){
+        $("#casual").show();
+    } else {
+        $("#casual").hide();
+    }
+    if(this.value === "2"){
+        $("#Sick").show();
+    } else {
+        $("#Sick").hide();
+    }
+    if(this.value === "3"){
+        $("#Maternity").show();
+    } else {
+        $("#Maternity").hide();
+    }
+    if(this.value === "4"){
+        $("#Annual").show();
+    } else {
+        $("#Annual").hide();
+    }
+});
+        
+    </script>
+
 </body>
 
 
