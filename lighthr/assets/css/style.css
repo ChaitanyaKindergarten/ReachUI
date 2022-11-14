@@ -204,9 +204,9 @@ align-items: center;
 border-radius: 50%;
 margin-right: 5px;
 }
-.col-md-12 {
+/* .col-md-12 {
   padding: 0px 15px;
-}
+} */
 .tinyuser {
 display: flex;
 padding-top: 10px;
@@ -388,4 +388,92 @@ text-align: left !important;
     position: absolute;
     right: 0px;
     left: 0px;
+}
+.column-flx{
+  display: flex;
+  flex-direction: column;
+}
+.quick-modal .megaIcon {
+  font-size: 46px;
+  color: #05db59;
+}
+.quick-modal .modal-header .modal-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #05db59;
+}
+.quick-modal .close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: #d7d5d5;
+}
+.quick-modal .close span {
+  font-size: 24px;
+}
+.quick-modal .modal-body {
+  padding: 0px 45px !important;
+  text-align: center;
+  font-size: 16px;
+}
+.quick-modal .modal-footer {
+  padding: 0px;
+  width: 100%;
+  background-color: #05db59;
+  margin-top: 30px;
+}
+.quick-modal .modal-footer .btn {
+  width: 100%;
+  box-shadow: none;
+  font-size: 16px;
+  background-color: #05db59 !important;
+}
+.quick-modal .modal-dialog {
+  max-width: 370px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.quick-modal .modal-body p {
+  color: #b3b5b4;
+  margin-top: 10px;
+}
+.quick-modal .modal-body p strong {
+  font-weight: bold;
+}
+.select-dropdown.dropdown-trigger {
+  display: none !important;
+}
+
+.form-line input {
+  font-size: 15px !important;
+}
+.form-control.select2 {
+  font-size: 15px !important;
+}
+/* .chat-header label {
+  margin-bottom: 12px;
+} */
+.chat-header .check-pill {
+  margin-bottom: 6px !important;
+  padding-right: 10px;
+  width: 33.33%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: auto !important;
+  min-height: 24px;
+}
+.chat-header .radio.input-group {
+  display: flex;
+}
+.chat-header .check-pill .check-label {
+  line-height: 18px;
+  height: auto !important;
+  padding-left: 25px;
+  padding-top: 3px;
+}
+.chat-header strong {
+  color: #9aa3a8;
 }
